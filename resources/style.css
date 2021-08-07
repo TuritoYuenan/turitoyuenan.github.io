@@ -2,7 +2,18 @@
 
 body {
     background: black url(globeart.jpg) no-repeat center top;
-    font-family: 'Montserrat Semibold', sans-serif;
+    margin: 0; color: white;
 }
 
-#margin {background-color: rgba(24,24,24,.6);}
+#margin {
+    background-color: rgba(24,24,24,.6);
+    margin: 0 20vw;
+    height: 100vh;
+}
+
+header {
+    padding: 3vw;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat Semibold', Roboto, Ubuntu, sans-serif;
+    font-size: 3vw;
+}
