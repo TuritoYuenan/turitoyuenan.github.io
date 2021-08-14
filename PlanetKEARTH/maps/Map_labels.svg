@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1800" height="900" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+        .def{fill:#aaaaaa;font-family:sans-serif;}
+        #capital{font-size:20px;text-transform:uppercase;}
+        #burgs{font-size:14px;text-transform:capitalize;}
+</style>
+<rect id="frame" width="1800" height="900" fill="#332211" fill-opacity="0"/>
+<g id="capital">
+        <text x="0338" y="527" class="def">sơn thàñ</text>
+        <text x="0803" y="431" class="def">old home</text>
+        <text x="1248" y="427" class="def">αλυμπια</text>
+        <text x="1312" y="569" class="def">ηιρονικυ</text>
+        <text x="0438" y="344" class="def">yarabah</text>
+        <text x="0622" y="531" class="def">sapie</text>
+</g>
+<g id="burgs">
+        <text x="0986" y="315" class="def">dunbury</text>
+        <text x="0209" y="590" class="def">hồng ña</text>
+        <text x="1507" y="187" class="def">οριον</text>
+        <text x="0375" y="659" class="def">nam triều</text>
+        <text x="1235" y="336" class="def">κολις</text>
+        <text x="0957" y="600" class="def">σονοε</text>
+        <text x="0279" y="661" class="def">cố đô</text>
+        <text x="0293" y="226" class="def">quwa</text>
+        <text x="0754" y="273" class="def">warseen</text>
+        <text x="0228" y="281" class="def">raha</text>
+        <text x="0304" y="492" class="def">ñất ñất</text>
+        <text x="0394" y="462" class="def">tâm bìñ</text>
+        <text x="0351" y="600" class="def">fan iến</text>
+        <text x="1545" y="298" class="def">μυθος</text>
+        <text x="0961" y="207" class="def">snowdin</text>
+        <text x="0704" y="564" class="def">sote</text>
+        <text x="0651" y="697" class="def">telarbo</text>
+        <text x="0692" y="492" class="def">foruni island</text>
+        <text x="0620" y="314" class="def">suda matenio</text>
+        <text x="0572" y="387" class="def">fekŝo</text>
+        <text x="1124" y="309" class="def">меш</text>
+        <text x="1477" y="553" class="def">μιρα</text>
+        <text x="0785" y="186" class="def">hatforge</text>
+        <text x="0904" y="536" class="def">miego</text>
+        <text x="0767" y="681" class="def">veruntum</text>
+        <text x="1361" y="250" class="def">lekleia</text>
+        <text x="1059" y="135" class="def">северная земля</text>
+        <text x="1521" y="422" class="def">ηανα</text>
+        <text x="1323" y="298" class="def">athytos</text>
+        <text x="1466" y="251" class="def">φαμος</text>
+        <text x="0989" y="685" class="def">σαιναρα</text>
+        <text x="0606" y="563" class="def">sonata</text>
+        <text x="0519" y="468" class="def">fan ĉiñ</text>
+        <text x="0219" y="500" class="def">iến sơn</text>
+        <text x="0438" y="709" class="def">iên hòa</text>
+        <text x="0680" y="429" class="def">ŝeato</text>
+        <text x="0489" y="577" class="def">thập iến</text>
+        <text x="1169" y="281" class="def">серлен</text>
+        <text x="1183" y="388" class="def">pylos</text>
+        <text x="1184" y="199" class="def">всерев</text>
+        <text x="1222" y="282" class="def">левеск</text>
+        <text x="1276" y="497" class="def">συτος</text>
+        <text x="0698" y="530" class="def">espera</text>
+        <text x="0517" y="361" class="def">al mala</text>
+        <text x="0706" y="768" class="def">velovium</text>
+        <text x="0565" y="652" class="def">ŝtela</text>
+        <text x="0547" y="710" class="def">ĉiela</text>
+        <text x="0715" y="642" class="def">sunalo</text>
+        <text x="0728" y="432" class="def">diplomat</text>
+        <text x="0693" y="107" class="def">nordham</text>
+        <text x="0483" y="509" class="def">ngàn việt</text>
+        <text x="0771" y="540" class="def">vespero</text>
+        <text x="1091" y="417" class="def">вруров</text>
+        <text x="0812" y="498" class="def">cape human</text>
+        <text x="0914" y="395" class="def">knaresbone</text>
+        <text x="0326" y="339" class="def">khainik</text>
+        <text x="0411" y="292" class="def">kaphor</text>
+        <text x="0637" y="375" class="def">koro</text>
+        <text x="1023" y="403" class="def">wigham</text>
+        <text x="1028" y="630" class="def">τοκο</text>
+        <text x="1149" y="506" class="def">οκαμα</text>
+        <text x="1399" y="466" class="def">ακασο</text>
+        <text x="0851" y="220" class="def">reykjar</text>
+        <text x="0988" y="133" class="def">prescoux</text>
+        <text x="0733" y="395" class="def">wasserfall</text>
+        <text x="0972" y="546" class="def">μαρονια</text>
+        <text x="0916" y="149" class="def">sanny</text>
+        <text x="0353" y="249" class="def">alqah</text>
+        <text x="0246" y="329" class="def">khazan</text>
+        <text x="0630" y="291" class="def">nord mateny</text>
+        <text x="0489" y="397" class="def">bắc liên</text>
+        <text x="1242" y="527" class="def">τινο</text>
+        <text x="1364" y="510" class="def">μικανο</text>
+        <text x="1389" y="642" class="def">μινανο</text>
+        <text x="1553" y="447" class="def">ηινα</text>
+        <text x="0864" y="629" class="def">perbo</text>
+        <text x="1106" y="533" class="def">σιροιαμα</text>
+        <text x="1382" y="414" class="def">θερμα</text>
+        <text x="1446" y="374" class="def">αμια</text>
+        <text x="1360" y="349" class="def">κερκις</text>
+        <text x="1596" y="196" class="def">μαριο</text>
+        <text x="1616" y="248" class="def">αρανος</text>
+        <text x="0728" y="337" class="def">zuidberg</text>
+        <text x="0880" y="307" class="def">blinton</text>
+</g>
+</svg>
