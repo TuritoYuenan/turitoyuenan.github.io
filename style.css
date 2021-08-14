@@ -1,46 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    background-color: black;
-    margin: 0; color: white;
+	background-color: black; margin: 0; color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Montserrat Semibold', sans-serif;
 }
 
-body#kearthtale {background: black url(project/kearthtale/globeart.svg) no-repeat center top;}
-body#turitoblog {background: black;}
+body#kearthtale {background: black url(kearthtale/globeart.svg) no-repeat center top;}
+body#turitoblog {}
 
 #margin {
-    background-color: rgba(24,24,24,.6);
-    margin: 0 20vw;
-    height: 100vh;
+	background-color: #18181899;
+	margin: 0 20vw;
+	height: 100vh;
 }
 
 .navbar {
-    width: 100%;
-    overflow: auto;
-    background-color: #181818;
+	width: 100%;
+	overflow: auto;
+	background-color: #333;
 }
 
 .navbar a {
-    float: left; color: aliceblue;
-    width: 24.99%;
-    text-align: center; text-decoration: none;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    font: 600 2vw system-ui, -apple-system, BlinkMacSystemFont, 'Montserrat Semibold', sans-serif;
+	float: left; color: aliceblue;
+	width: 24.99%; padding: 12px 0;
+	text-align: center; text-decoration: none;
+	font-size: xx-large; font-weight: 500;
 }
 
 .navbar a:hover {
-    background-color: black;
+	background-color: black;
 }
 
 header {
-    padding: 3vw;
-    text-align: center;
-    font: bold 3vw system-ui, -apple-system, BlinkMacSystemFont, 'Montserrat Semibold', sans-serif;
+	padding: 3vw; text-align: center;
+	font-size: 3vw; font-weight: bold;
 }
 
-@media screen and (orientation:portrait) {
-    #margin {margin:0;}
-    .navbar a {font-size: 3vw;}
-    header {font-size: 8vw;}
+@media screen and (max-aspect-ratio: 5/3) {
+	#margin {margin:0;}
+	.navbar a {font-size: 3vw;}
+	header {font-size: 8vw;}
 }
