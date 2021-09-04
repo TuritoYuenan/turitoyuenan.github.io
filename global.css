@@ -1,44 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
+    /*Default*/
     --def_font: system-ui, -apple-system, BlinkMacSystemFont, 'Montserrat Semibold', sans-serif;
+    /*Foruni color palette*/
+    --frn-blk: #181818;
+    --frn-red: #CC1818;
+    --frn-blu: #06C;
+    --frn-grn: #096;
+    --frn-ylw: #FC0;
+    --frn-org: #F60;
+    --drk-red: #600;
 }
 
-body {
-	background-color: black; margin: 0; color: white;
-	font-family: var(--def_font);
-}
+body {font-family: var(--def_font);}
 
-#margin {
-	background-color: #18181899;
-	margin: 0 20vw;
-	height: 100vh;
-}
-
-.navbar {
-	width: 100%;
-	overflow: auto;
-	background-color: #333;
-}
-
-.navbar a {
-	float: left; color: aliceblue;
-	width: 24.99%; padding: 12px 0;
-	text-align: center; text-decoration: none;
-	font-size: xx-large; font-weight: 500;
-}
-
-.navbar a:hover {
-	background-color: black;
-}
-
-header {
-	padding: 3vw; text-align: center;
-	font-size: 3vw; font-weight: bold;
-}
-
-@media screen and (max-aspect-ratio: 5/3) {
-	#margin {margin:0;}
-	.navbar a {font-size: 3vw;}
-	header {font-size: 8vw;}
-}
+body#redir {background-color: var(--frn-blk); text-align: center; color: white;}
+header#redir {font-size: xx-large;}
