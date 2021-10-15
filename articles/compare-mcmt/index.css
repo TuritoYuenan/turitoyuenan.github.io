@@ -1,0 +1,25 @@
+@import url(../../root.css);
+
+body {font-family: var(--sys-font);}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+img {height: 3em;}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {padding: 1em;}
+th {background-color: darkgreen; color: white;}
+td {background-color: aliceblue;}
+
+.note {
+    color: #666;
+    width: 20%;
+}
