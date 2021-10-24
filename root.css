@@ -3,6 +3,7 @@
 :root {
     /*Font*/
     --sys-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    --msr-font: "Montserrat Medium", sans-serif;
     /*Foruni color palette*/
     --frn-blk: #181818;
     --frn-red: #CC1818;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Find Art by Code</title>
+	<title>Find Art by Code</title><link rel="icon" href="../../icons/Foruni.ico">
     <style>
         @import url(../../root.css);
     
@@ -13,16 +13,20 @@
             color: white;
         }
     
+        form {
+            margin: auto; padding: 1vw;
+            width: max-content; border-radius: 1em;
+            background-color: #608CF4;
+        }
+    
         input {
             background-color: #0000; border: 0;
             font: inherit; color: inherit;
         }
-    
-        form {
-            margin: auto; padding: 1vw;
-            width: max-content; border-radius: 1em;
-            background-color: #30333f;
-        }
+
+        input:focus {border: 0;}
+
+        #pxcode::placeholder {color: lightblue; opacity: 1;}
     </style>
 </head>
 <body>
@@ -32,16 +36,16 @@
     </header>
     <form>
         <label>pixiv.net/en/artworks/</label>
-        <input type="number" id="code" placeholder="code">
+        <input type="number" id="pxcode" placeholder="code">
         <input type="button" id="find" value="Find" onclick="get()"><br>
         Your sauce: <a id="sauce">*should appears here*</a>
     </form>
     <script>
 		function get() {
             const s = document.getElementById("sauce");
-			let code = document.getElementById("code").value;
+			let pxcode = document.getElementById("pxcode").value;
             var url = "https://pixiv.net/en/artworks/";
-            s.setAttribute("href", url+code);
+            s.setAttribute("href", url+pxcode);
             s.innerHTML = "Sauce";
 		}
 	</script>
