@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find Art by Code</title>
+    <style>
+        @import url(../../root.css);
+    
+        body {
+            background-color: var(--frn-blk);
+            font: normal xx-large var(--sys-font);
+            text-align: center;
+            color: white;
+        }
+    
+        input {
+            background-color: #0000; border: 0;
+            font: inherit; color: inherit;
+        }
+    
+        form {
+            margin: auto; padding: 1vw;
+            width: max-content; border-radius: 1em;
+            background-color: #30333f;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Find Art by Code</h1>
+        <p>A very unnecessary and time-consuming tool for fun</p>
+    </header>
+    <form>
+        <label>pixiv.net/en/artworks/</label>
+        <input type="number" id="code" placeholder="code">
+        <input type="button" id="find" value="Find" onclick="get()"><br>
+        Your sauce: <a id="sauce">*should appears here*</a>
+    </form>
+    <script>
+		function get() {
+            const s = document.getElementById("sauce");
+			let code = document.getElementById("code").value;
+            var url = "https://pixiv.net/en/artworks/";
+            s.setAttribute("href", url+code);
+            s.innerHTML = "Sauce";
+		}
+	</script>
+</body>
+</html>
