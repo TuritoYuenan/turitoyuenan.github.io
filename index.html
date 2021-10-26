@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Dashboard</title><link rel="icon" href="icons/Foruni.ico">
-		<style>
-			@import url(root.css);
-		
-			body {
-				background-color: var(--frn-blk);
-				font: normal xx-large var(--sys-font);
-				color: white; text-align: center;
-			}
-		</style>
-		<link rel="icon" href="turito/favicon.ico">
-	</head>
-	<body>
-		<header><h1>I am Turito Yuenan</h1></header>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="icon" href="icons/Foruni.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+	<style>
+		@import url(root.css);
+
+		body {
+			margin: 0 1em;
+			background-color: var(--frn-blk);
+			font: normal xx-large var(--sys-font);
+			color: white;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		section {
+			padding: .5em; margin: 1em 0;
+			border-radius: .5em;
+			background-color: #30333F;
+			overflow: auto; white-space: nowrap;
+		}
+
+		.scl {
+			padding: .8em; width: 3em;
+			border-radius: .5em;
+			display: inline-block;
+			text-decoration: none;
+			text-align: center;
+			color: white;
+		}
+	</style>
+	<link rel="icon" href="turito/favicon.ico">
+</head>
+<body>
+	<header><h1>Turito Yuenan</h1></header>
+	<h2>My social profiles</h2>
+	<section id="nets">
+		<a id="gh" class="bi-github"></a>
+		<a id="tw" class="bi-twitter"></a>
+		<a id="pr" class="bi-pinterest"></a>
+		<a id="fb" class="bi-facebook"></a>
+		<a id="tb">Tumblr</a>
+		<a id="px">pixiv</a>
+	</section>
+	<h2>My articles</h2>
+	<section id="articles">
+		under construction
+	</section>
+	<h2>My online tools</h2>
+	<section id="tools">
+		under construction
+	</section>
+	<script>
+		function social(id, color, link) {
+			const cell = document.getElementById(id);
+			cell.classList.add("scl");
+			cell.style = "background-color:"+color;
+			cell.setAttribute("href", "https://"+link);
+		}
+		social("gh", "#181A22", "github.com/TuritoYuenan");
+		social("tw", "#6493EB", "twitter.com/TuritoYuenan");
+		social("pr", "#C31E30", "pinterest.com/TuritoYuenan");
+		social("fb", "#5876F9", "fb.com/profile.php?id=100033188469527");
+		social("tb", "#0D1634", "turito-yuenan.tumblr.com");
+		social("px", "#608CF4", "pixiv.net/en/users/59535575");
+	</script>
+</body>
 </html>
