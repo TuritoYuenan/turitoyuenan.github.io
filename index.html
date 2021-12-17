@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Turito Yuenan</title><link rel="icon" href="icons/Foruni.ico">
+	<style>
+		@import url(root.css);
+
+		body {
+			margin: 0; color: var(--nord04);
+			font: normal xx-large var(--sys-font);
+			background-size: cover;
+		}
+
+		header {padding: 0 1em; text-align: center;}
+		
+		.parallax {height: 50vh;}
+		.box#box-scl {
+			margin: auto; padding: .3em; width: max-content;
+			overflow: auto; white-space: nowrap;
+			background-color: var(--nord01);
+		}
+
+		.box#box-scl a {
+			padding: .8em 1.6em; display: inline-block;
+			text-decoration: none; text-align: center;
+			color: inherit;
+		}
+
+	</style>
+</head>
+<body>
+	<header><h1>Turito Yuenan</h1></header>
+	<section class="box" id="box-scl"></section>
+	<script src="tools/SclCelGen.js"></script>
+	<script>
+		const social = [
+			["var(--nord12)", "reddit"   , "reddit.com/u/LeaderTurito"],
+			["var(--nord00)", "github"   , "github.com/TuritoYuenan"],
+			["var(--nord10)", "facebook" , "facebook.com/TuritoYuenan"],
+			["var(--nord11)", "pinterest", "pinterest.com/TuritoYuenan"],
+			["var(--nord10)", "twitter"  , "twitter.com/TuritoYuenan"],
+			["var(--nord11)", "youtube"  , "youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw"],
+		]
+
+		for(i = 0; i < social.length; i++) {scl(social[i][0], social[i][1], social[i][2])}
+		document.body.style.background = "url(https://sugarblank.github.io/Wallpapers/Nordic.png) fixed center no-repeat";
+	</script>
+</body>
+</html>
