@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><title>Turito Yuenan</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Turito Yuenan</title><link rel="icon" href="icons/Foruni.ico">
-	<style>
-		@import url(root.css);
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/Foruni.svg"><style>
 		body {
-			margin: 0; color: var(--nord04);
-			font: normal xx-large var(--sys-font);
-			background-size: cover;
+			margin: 0; color: var(--nord04); background-size: cover; font-size: xx-large;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+			background: url(https://sugarblank.github.io/Wallpapers/Nordic.png) fixed center no-repeat;
 		}
 
 		header {padding: 0 1em; text-align: center;}
-		
-		.parallax {height: 50vh;}
-		.box#box-scl {
+		a {text-decoration: none; color: inherit;}
+		#box-scl a {padding: .8em 1.6em; text-align: center;}
+
+		#box-scl {
 			margin: auto; padding: .3em; width: max-content;
-			overflow: auto; white-space: nowrap;
+			display: flex; flex-wrap: wrap;
 			background-color: var(--nord01);
 		}
 
-		.box#box-scl a {
-			padding: .8em 1.6em; display: inline-block;
-			text-decoration: none; text-align: center;
-			color: inherit;
+		.parallax {
+			display: flex; justify-content: center; height: 50vh;
+			align-items: center; background-size: cover;
+			background: black fixed center no-repeat;
+		}
+	</style>
+</head><body>
+	<header><h1>Turito Yuenan</h1></header>
+	<section id="box-scl"></section>
+	<script>
+		function scl(color, net, url) {
+		let cell = document.createElement("A"); cell.style.backgroundColor = color;
+			cell.classList.add("bi-" + net); cell.href = "https://"+url;
+			document.getElementById("box-scl").appendChild(cell);
 		}
 
-	</style>
-</head>
-<body>
-	<header><h1>Turito Yuenan</h1></header>
-	<section class="box" id="box-scl"></section>
-	<script src="tools/SclCelGen.js"></script>
-	<script>
 		const social = [
 			["var(--nord12)", "reddit"   , "reddit.com/u/LeaderTurito"],
 			["var(--nord00)", "github"   , "github.com/TuritoYuenan"],
@@ -45,7 +47,6 @@
 		]
 
 		for(i = 0; i < social.length; i++) {scl(social[i][0], social[i][1], social[i][2])}
-		document.body.style.background = "url(https://sugarblank.github.io/Wallpapers/Nordic.png) fixed center no-repeat";
 	</script>
 </body>
 </html>
