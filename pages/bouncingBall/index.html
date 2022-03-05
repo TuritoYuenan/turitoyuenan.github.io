@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><title>Bouncing Ball</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+	<style>
+		body {background-color: #2E3440; margin: 0; font-family: sans-serif;}
+		h1 {text-align: center; color: white;}
+		main {display: flex; justify-content: center; align-items: center;}
+	</style>
+</head><body>
+	<h1>Bouncing Ball using p5.js</h1>
+	<script>
+	let x = 100, y = 100, xV = 5, yV = 5;
+	function setup() {createCanvas(800,600); noStroke()}
+	function draw() {
+		background(24); x += xV; y+= yV;
+		fill(100, 50, 255); circle(x, y, 100);
+		if(x > width - 50 || x < 50) {xV *= -1;}
+		if(y > height - 50 || y < 50) {yV *= -1;}
+	}
+	</script>
+</body>
+</html>
