@@ -4,49 +4,55 @@
 	<meta charset="UTF-8"><title>Turito Yuenan</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/Foruni.svg"><style>
+	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/YuenanBG.svg"><style>
 		body {
-			margin: 0; color: var(--nord04); background-size: cover; font-size: xx-large;
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-			background: url(https://sugarblank.github.io/Wallpapers/Nordic.png) fixed center no-repeat;
+			margin: 0; font: xx-large Segoe UI, sans-serif; color: var(--nord04);
+			background: url(https://turitoyuenan.github.io/KEARTHTale/svg/globeArt.svg) fixed center no-repeat;
+			background-size: cover;
 		}
 
-		header {padding: 0 1em; text-align: center;}
+		h1, h2, h3 {margin: .3em;}
 		a {text-decoration: none; color: inherit;}
-		#box-scl a {padding: .8em 1.6em; text-align: center;}
+		header, footer, #lower {padding: 1em; text-align: center;}
+		header {background: #2E344080;}
+		footer, #lower {background: var(--nord00);}
+		#pfp {width: 5em;}
+		#pfp, #box-scl {border: .3em solid var(--nord01);}
 
-		#box-scl {
-			margin: auto; padding: .3em; width: max-content;
-			display: flex; flex-wrap: wrap;
-			background-color: var(--nord01);
-		}
+		.board, #box-scl {margin: auto;}
+		.board {width: 70vw; display: grid; grid-template-columns: repeat(3, auto);}
+		.board a {padding: .8em; background: var(--nord01);}
 
-		.parallax {
-			display: flex; justify-content: center; height: 50vh;
-			align-items: center; background-size: cover;
-			background: black fixed center no-repeat;
+		#box-scl {width: max-content; display: flex; flex-wrap: wrap; background: var(--nord01);}
+		#box-scl a {padding: .8em 1.6em;}
+
+		@media (max-width: 1000px) {
+			#board {grid-template-columns: repeat(2, auto);}
+			#box-scl {width: 90%;} #box-scl a {flex: 12.5%;}
 		}
 	</style>
 </head><body>
-	<header><h1>Turito Yuenan</h1></header>
-	<section id="box-scl"></section>
-	<script>
-		function scl(color, net, url) {
-		let cell = document.createElement("A"); cell.style.backgroundColor = color;
-			cell.classList.add("bi-" + net); cell.href = "https://"+url;
-			document.getElementById("box-scl").appendChild(cell);
-		}
-
-		const social = [
-			["var(--nord12)", "reddit"   , "reddit.com/u/LeaderTurito"],
-			["var(--nord00)", "github"   , "github.com/TuritoYuenan"],
-			["var(--nord10)", "facebook" , "facebook.com/TuritoYuenan"],
-			["var(--nord11)", "pinterest", "pinterest.com/TuritoYuenan"],
-			["var(--nord10)", "twitter"  , "twitter.com/TuritoYuenan"],
-			["var(--nord11)", "youtube"  , "youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw"],
-		]
-
-		for(i = 0; i < social.length; i++) {scl(social[i][0], social[i][1], social[i][2])}
-	</script>
-</body>
-</html>
+	<header><img src="svg/YuenanBG.svg" id="pfp"><h1>Turito Yuenan</h1>
+		<p><small>Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer</small></p>
+		<section id="box-scl">
+			<a style="background: var(--nord12);" class="bi-reddit" href="https://reddit.com/u/LeaderTurito"></a>
+			<a style="background: var(--nord00);" class="bi-github" href="https://github.com/TuritoYuenan"></a>
+			<a style="background: var(--nord10);" class="bi-facebook" href="https://facebook.com/TuritoYuenan"></a>
+			<a style="background: var(--nord11);" class="bi-pinterest" href="https://pinterest.com/TuritoYuenan"></a>
+			<a style="background: var(--nord10);" class="bi-twitter" href="https://twitter.com/TuritoYuenan"></a>
+			<a style="background: var(--nord11);" class="bi-youtube" href="https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw"></a>
+			<a style="background: var(--nord10);" class="bi-linkedin" href="https://linkedin.com/in/turito-yuenan-686407122"></a>
+			<a style="background: var(--nord00);" class="bi-envelope" href="mailto:turitoyuenan@proton.me"></a>
+		</section>
+	</header><div id="lower">
+		<h2>My Projects</h2><br/>
+		<section class="board">
+			<a href="https://turitoyuenan.github.io/KEARTHTale">KEARTHTale AU</a>
+			<a href="https://turitoyuenan.github.io/MagiRepo">The&nbsp;Magical Girl&nbsp;Box</a>
+			<a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a>
+		</section><h2><small>small stuffs</small></h2><section class="board">
+			<a href="pages/bouncingBall">Bouncing Ball</a>
+			<a href="pages/findArt">Find pixiv art by ID</a>
+		</section>
+	</div><footer><small>TuritoYuenan &COPY; 2022 Non-commercial | Nord Theme by Arctic Ice Studio</small></footer>
+</body></html>
