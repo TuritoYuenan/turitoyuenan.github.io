@@ -21,8 +21,5 @@ void draw() {
 }
 
 void keyPressed() {
-	if (key == 'q') {
-    videoExport.endMovie();
-    exit();
-  }
+	if (key == 'q') {videoExport.endMovie(); exit()}
 }
