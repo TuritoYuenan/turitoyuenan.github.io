@@ -1,61 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 	<meta charset="UTF-8"><title>Turito Yuenan</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/YuenanBG.svg"><style>
-		body {
-			background: url(https://turitoyuenan.github.io/KEARTHTale/svg/globeArt.svg) fixed center no-repeat;
-			margin: 0; font: xx-large Segoe UI, sans-serif; color: var(--nord04); background-size: cover;
-		}
+		@import url(common.css);
 
-		h1, h2, h3 {margin: .3em;}
-		a {text-decoration: none; color: inherit;}
-		header, footer, #lower {padding: 1em; text-align: center;}
-		header {background: #2E344080;}
-		footer, #lower {background: var(--nord00);}
-
-		#pfp, #box-scl {border: .3em solid var(--nord00);}
-		.board, #box-scl, #anims {margin: auto;}
-		.board {width: 90%; display: grid; grid-template-columns: repeat(3, auto);}
+		.board, #social, #anims {margin: auto;}
+		#social, #pfp {border: .3em solid var(--nord00);}
+		#social {width: max-content; display: flex; flex-wrap: wrap;}
+		#social a {padding: .8em 1.6em;}
+		.board, #anims {width: 90%; display: grid;}
+		.board {grid-template-columns: repeat(3, auto);}
 		.board a {padding: 1em; background: var(--nord01);}
-		#box-scl {width: max-content; display: flex; flex-wrap: wrap;}
-		#box-scl a {padding: .8em 1.6em;}
-		#anims {width: 90%; display: grid; grid-template-columns: repeat(2, auto); gap: .5em;}
+		#anims {grid-template-columns: repeat(2, auto); gap: .5em;}
 		#anims iframe {border: 0; width: 100%; height: 600px;}
 
-		@media (max-width: 1000px) {
-			.board {grid-template-columns: repeat(2, auto);}
-			#box-scl {width: 90%;} #box-scl a {flex: 10%;}
-			#anims {grid-template-columns: auto;}
-		}
 		@media (max-width: 640px) {.board {grid-template-columns: auto;}}
+		@media (max-width: 1000px) {.board {grid-template-columns: repeat(2, auto);}
+			#social {width: 90%;} #social a {flex: 10%;} #anims {grid-template-columns: auto;}
+		}
 	</style>
 </head><body>
 	<header><img id="pfp" src="svg/YuenanBG.svg" style="width: 5em;"><h1>Turito Yuenan</h1>
 		<p><small>Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer</small></p>
-		<section id="box-scl">
-			<a style="background: var(--nord10);" class="bi-linkedin" href="https://linkedin.com/in/turitoyuenan"></a>
-			<a style="background: var(--nord01);" class="bi-github" href="https://github.com/TuritoYuenan"></a>
-			<a style="background: var(--nord10);" class="bi-twitter" href="https://twitter.com/TuritoYuenan"></a>
-			<a style="background: var(--nord11);" class="bi-pinterest" href="https://pinterest.com/TuritoYuenan"></a>
-			<a style="background: var(--nord12);" class="bi-reddit" href="https://reddit.com/u/LeaderTurito"></a>
-			<a style="background: var(--nord11);" class="bi-youtube" href="https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw"></a>
-			<a style="background: var(--nord10);" class="bi-facebook" href="https://facebook.com/TuritoYuenan"></a>
+		<section id="social" appml-data="init">
+			<a appml-repeat="nets" style="background: var(--{{co}});" class="bi-{{net}}" href="{{href}}"></a>
 		</section>
-	</header><div id="lower">
+	</header><main>
 		<h2>My Projects</h2><br/>
 		<section class="board">
 			<a href="https://turitoyuenan.github.io/KEARTHTale">KEARTHTale AU</a>
 			<a href="https://turitoyuenan.github.io/MagiRepo">The&nbsp;Magical Girl&nbsp;Box</a>
 			<a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a>
-		</section><h2>small animations</h2><section id="anims">
+		</section><h2>other stuffs</h2><section id="anims">
 			<iframe src="anims/bouncingBall.html"></iframe>
 			<iframe src="anims/analogClock.html"></iframe>
 		</section>
-	</div><footer><small>
-		TuritoYuenan &COPY; 2022 Non-commercial | Nord Theme by Arctic Ice Studio
-		<br/><a class="bi-envelope" href="mailto:turitoyuenan@proton.me"></a> turitoyuenan@proton.me
-	</small></footer>
+	</main><footer appml-include-html="footer.htm"></footer>
+	<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script><script>
+	var init = {"nets": [
+		{co: 'nord10', net: 'linkedin', href: 'https://linkedin.com/in/turitoyuenan'},
+		{co: 'nord01', net: 'github', href: 'https://github.com/TuritoYuenan'},
+		{co: 'nord10', net: 'twitter', href: 'https://twitter.com/TuritoYuenan'},
+		{co: 'nord11', net: 'pinterest', href: 'https://pinterest.com/TuritoYuenan'},
+		{co: 'nord12', net: 'reddit', href: 'https://reddit.com/u/LeaderTurito'},
+		{co: 'nord11', net: 'youtube', href: 'https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw'},
+		{co: 'nord10', net: 'facebook', href: 'https://facebook.com/TuritoYuenan'},
+	]}
+	</script>
 </body></html>
