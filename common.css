@@ -1,10 +1,10 @@
 body {
-	background: url(https://turitoyuenan.github.io/KEARTHTale/svg/globeArt.svg) fixed center no-repeat;
+	background: url(https://turitoyuenan.github.io/planetPratero/svg/globeArt.svg) fixed center no-repeat;
 	margin: 0; font: xx-large Segoe UI, sans-serif; color: #D8DEE9; background-size: cover;
 }
 
 h1, h2, h3, p {margin: 14px;}
-a {text-decoration: none; color: inherit;}
+a {color: inherit;}
 header, main, footer {padding: 1em; text-align: center;}
 header, footer {background: #2E344080;}
 main {background: #2E3440;}

@@ -6,47 +6,49 @@
 	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/YuenanBG.svg"><style>
 		@import url(common.css);
 
-		.board, #social, #anims {margin: auto;}
+		.grid, #social {margin: auto;}
+		.grid {width: 90%; display: grid;}
+		.grid {grid-template-columns: repeat(3, auto);}
+		.grid a {padding: 1em; background: var(--nord01);}
 		#social, #pfp {border: .3em solid var(--nord00);}
 		#social {width: max-content; display: flex; flex-wrap: wrap;}
 		#social a {padding: .8em 1.6em;}
-		.board, #anims {width: 90%; display: grid;}
-		.board {grid-template-columns: repeat(3, auto);}
-		.board a {padding: 1em; background: var(--nord01);}
 		#anims {grid-template-columns: repeat(2, auto); gap: .5em;}
 		#anims iframe {border: 0; width: 100%; height: 600px;}
+		
+		.bi-github {background: var(--nord01)  } .bi-youtube {background: var(--nord11)  }
+		.bi-reddit {background: var(--nord12)  } .bi-twitter {background: var(--nord10)  }
+		.bi-linkedin {background: var(--nord10)} .bi-pinterest {background: var(--nord11)}
 
-		@media (max-width: 640px) {.board {grid-template-columns: auto;}}
-		@media (max-width: 1000px) {.board {grid-template-columns: repeat(2, auto);}
-			#social {width: 90%;} #social a {flex: 10%;} #anims {grid-template-columns: auto;}
-		}
+		@media (max-width: 1000px) {.grid {grid-template-columns: repeat(2, auto);}
+			#social {width: 90%;} #social a {flex: 10%;} #anims {grid-template-columns: auto;}}
+		@media (max-width: 0640px) {.grid {grid-template-columns: auto;}}
 	</style>
 </head><body>
 	<header><img id="pfp" src="svg/YuenanBG.svg" style="width: 5em;"><h1>Turito Yuenan</h1>
-		<p><small>Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer</small></p>
+		<p><small>Vietnamese Apprentice Programmer, Web&nbsp;Developer and FanFiction&nbsp;Writer</small></p>
 		<section id="social" appml-data="init">
-			<a appml-repeat="nets" style="background: var(--{{co}});" class="bi-{{net}}" href="{{href}}"></a>
+			<a appml-repeat="nets" class="bi-{{net}}" href="{{href}}"></a>
 		</section>
 	</header><main>
 		<h2>My Projects</h2><br/>
-		<section class="board">
-			<a href="https://turitoyuenan.github.io/KEARTHTale">KEARTHTale AU</a>
+		<section class="grid">
+			<a href="https://turitoyuenan.github.io/planetPratero">Planet Pratero</a>
 			<a href="https://turitoyuenan.github.io/MagiRepo">The&nbsp;Magical Girl&nbsp;Box</a>
 			<a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a>
-		</section><h2>other stuffs</h2><section id="anims">
+		</section><h2>animations</h2><section class="grid" id="anims">
 			<iframe src="anims/bouncingBall.html"></iframe>
 			<iframe src="anims/analogClock.html"></iframe>
 		</section>
 	</main><footer appml-include-html="footer.htm"></footer>
 	<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script><script>
 	var init = {"nets": [
-		{co: 'nord10', net: 'linkedin', href: 'https://linkedin.com/in/turitoyuenan'},
-		{co: 'nord01', net: 'github', href: 'https://github.com/TuritoYuenan'},
-		{co: 'nord10', net: 'twitter', href: 'https://twitter.com/TuritoYuenan'},
-		{co: 'nord11', net: 'pinterest', href: 'https://pinterest.com/TuritoYuenan'},
-		{co: 'nord12', net: 'reddit', href: 'https://reddit.com/u/LeaderTurito'},
-		{co: 'nord11', net: 'youtube', href: 'https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw'},
-		{co: 'nord10', net: 'facebook', href: 'https://facebook.com/TuritoYuenan'},
+		{net: 'linkedin',  href: 'https://linkedin.com/in/turitoyuenan'},
+		{net: 'github',    href: 'https://github.com/TuritoYuenan'},
+		{net: 'pinterest', href: 'https://pinterest.com/TuritoYuenan'},
+		{net: 'reddit',    href: 'https://reddit.com/u/LeaderTurito'},
+		{net: 'twitter',   href: 'https://twitter.com/TuritoYuenan'},
+		{net: 'youtube',   href: 'https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw'},
 	]}
 	</script>
 </body></html>
