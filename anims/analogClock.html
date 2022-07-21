@@ -2,11 +2,11 @@
 <html lang="en"><head>
 	<meta charset="UTF-8"><title>Analog Clock using p5.js</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
-	<link rel="icon" href="../svg/YuenanBG.svg"><link rel="stylesheet" href="anims.css">
+	<link rel="stylesheet" href="anims.css">
 </head><body>
-	<script>
-	const nord0 = [59, 66, 82], nord3 = [67, 76, 94], nord4 = [216, 222, 233];
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js">
+	</script><script>
+	const nord4 = [216, 222, 233];
 	let cX, cY, rH, rM, rS, dC
 	function setup() {
 		createCanvas(window.innerWidth, window.innerHeight); noStroke()
@@ -14,8 +14,7 @@
 		rS = rC * 0.72; rM = rC * 0.60; rH = rC * 0.50; dC = rC * 1.8;
 	}
 	function draw() {
-		background(nord0);
-		fill(nord3); noStroke(); circle(cx, cy, dC);
+		background(46, 52, 64); fill(59, 66, 82); noStroke(); circle(cx, cy, dC);
 
 		let h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 		let m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
@@ -25,9 +24,6 @@
 		strokeWeight(2); line(cx, cy, cx + cos(s) * rS, cy + sin(s) * rS);
 		strokeWeight(4); line(cx, cy, cx + cos(m) * rM, cy + sin(m) * rM);
 		strokeWeight(8); line(cx, cy, cx + cos(h) * rH, cy + sin(h) * rH);
-
-		fill(nord4); noStroke(); circle(cx, cy, dC*.02)
 	}
 	</script>
-	<a id="cap" href="./analogClock.html">Analog Clock with p5.js</a>
 </body></html>

@@ -2,46 +2,46 @@
 <html lang="en"><head>
 	<meta charset="UTF-8"><title>Turito Yuenan</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="themes/nord.css"><link rel="icon" href="svg/YuenanBG.svg"><style>
-		@import url(common.css);
+	<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+	<link rel="icon" href="svg/turito-wbg.svg"><style>
+		@import url(global.css);
 
-		.grid, #social {margin: auto;}
-		.grid {width: 90%; display: grid;}
-		.grid {grid-template-columns: repeat(3, auto);}
-		.grid a {padding: 1em; background: var(--nord01);}
-		#social, #pfp {border: .3em solid var(--nord00);}
-		#social {width: max-content; display: flex; flex-wrap: wrap;}
-		#social a {padding: .8em 1.6em; width: 1fr;}
-		#anims {grid-template-columns: repeat(2, auto); gap: .5em;}
-		#anims iframe {border: 0; width: 100%; height: 600px;}
-		
-		.bi-github {background: var(--nord01)  } .bi-youtube {background: var(--nord11)  }
-		.bi-reddit {background: var(--nord12)  } .bi-twitter {background: var(--nord10)  }
+		iframe {border: 0; width: 100%; height: 600px;}
+
+		.bi-github   {background: var(--nord01)} .bi-youtube   {background: var(--nord11)}
+		.bi-reddit   {background: var(--nord12)} .bi-twitter   {background: var(--nord10)}
 		.bi-linkedin {background: var(--nord10)} .bi-pinterest {background: var(--nord11)}
 
-		@media (max-width: 1000px) {.grid {grid-template-columns: repeat(2, auto);}
-			#social {width: 90%;} #social a {flex: 10%;} #anims {grid-template-columns: auto;}}
-		@media (max-width: 0640px) {.grid {grid-template-columns: auto;}}
+		.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))}
+		#social {display: inline-flex; flex-wrap: wrap;} #social a {padding: .4em 1em;}
+		#projects a {padding: 1em; background: var(--nord01);}
 	</style>
 </head><body>
-	<header><img id="pfp" src="svg/YuenanBG.svg" style="width: 5em;"><h1>Turito Yuenan</h1>
-		<p><small>Vietnamese Apprentice Programmer, Web&nbsp;Developer and FanFiction&nbsp;Writer</small></p>
-		<section id="social" appml-data="init">
-			<a appml-repeat="nets" class="bi-{{net}}" href="{{href}}"></a>
+	<header>
+		<h1>Turito Yuenan</h1>
+		<p>Vietnamese Apprentice Programmer, Web&nbsp;Developer and FanFiction&nbsp;Writer</p>
+		<br/><section id="social" appml-data="init">
+			<a appml-repeat="nets" class="social bi-{{net}}" href="{{href}}"></a>
 		</section>
-	</header><main>
-		<h2>My Projects</h2><br/>
-		<section class="grid">
-			<a href="https://turitoyuenan.github.io/planetPratero">Planet Pratero</a>
-			<a href="https://turitoyuenan.github.io/MagiRepo">The&nbsp;Magical Girl&nbsp;Box</a>
-			<a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a>
-		</section><h2>animations</h2><section class="grid" id="anims">
-			<iframe src="anims/bouncingBall.html"></iframe>
+	</header>
+	<main>
+		<h2>Projects</h2><ul>
+			<li><a href="https://turitoyuenan.github.io/planetPratero">Planet Pratero</a></li>
+			<li><a href="https://turitoyuenan.github.io/MagiRepo">The Magical Girl Box</a></li>
+			<li><a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a></li>
+		</ul>
+		<h2>Articles</h2><ul>
+			<li><a href="articles/pxMilestone.html">pixiv's Milestones</a></li>
+		</ul>
+		<h2>Animations</h2><br/>
+		<section class="grid" id="anims">
 			<iframe src="anims/analogClock.html"></iframe>
+			<iframe src="anims/bouncingBall.html"></iframe>
 		</section>
-	</main><footer appml-include-html="footer.htm"></footer>
-	<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script><script>
+	</main>
+	<footer appml-include-html="footer.htm"></footer>
+	<script>
 	var init = {"nets": [
 		{net: 'linkedin',  href: 'https://linkedin.com/in/turitoyuenan'},
 		{net: 'github',    href: 'https://github.com/TuritoYuenan'},
