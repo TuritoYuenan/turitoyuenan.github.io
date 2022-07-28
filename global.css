@@ -5,17 +5,17 @@
 	--nord08: #88c0d0; --nord09: #81a1c1; --nord10: #5e81ac; --nord11: #bf616a;
 	--nord12: #d08770; --nord13: #ebcb8b; --nord14: #a3be8c; --nord15: #b48ead;
 	/* Foruni color palette */
-	--frnBlk: #181818; --frnGol: #FC0; --frnOrg: #F60;
-	--frnRed: #CC1818; --frnGrn: #096; --frnBlu: #06C;
+	--frnBlk: #181818; --frnGol: #ffcc00; --frnOrg: #ff6600;
+	--frnRed: #cc1818; --frnGrn: #009966; --frnBlu: #0066cc;
 }
 
 body {
-	margin: 0; color: var(--nord04); font: xx-large 'Trebuchet MS', Verdana, sans-serif;
-	background: url(https://scourii.github.io/Wallpapers/Nordic7.jpg) fixed center no-repeat;
+	margin: 1em; background: var(--nord00);
+	font: xx-large 'Trebuchet MS', system-ui, sans-serif;
+	color: var(--nord04); text-align: left;
 }
 
-h1, h2, h3, p {margin: 14px 0;} a {color: inherit}
-header, main, footer {padding: 1em; text-align: left}
-header, footer {background: var(--nord00)}
-main {background: #2E3440A0}
+h1, h2, h3, ul, p {margin: 1rem 0;}
+a {color: inherit}
+main {min-height: 100vh}
 footer {font-size: medium}

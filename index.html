@@ -9,40 +9,18 @@
 
 		iframe {border: 0; width: 100%; height: 600px;}
 
-		.bi-github   {background: var(--nord01)} .bi-youtube   {background: var(--nord11)}
-		.bi-reddit   {background: var(--nord12)} .bi-twitter   {background: var(--nord10)}
-		.bi-linkedin {background: var(--nord10)} .bi-pinterest {background: var(--nord11)}
+		.bi-github {background: var(--nord01)}
+		.bi-reddit {background: var(--nord12)}
+		.bi-twitter, .bi-linkedin {background: var(--nord10)} 
+		.bi-youtube, .bi-pinterest {background: var(--nord11)}
 
 		.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))}
-		#social {display: inline-flex; flex-wrap: wrap;} #social a {padding: .4em 1em;}
+		#social {display: inline-flex; flex-wrap: wrap;} #social a {padding: .5em 1em;}
 		#projects a {padding: 1em; background: var(--nord01);}
 	</style>
 </head><body>
-	<header>
-		<h1>Turito Yuenan</h1>
-		<p>Vietnamese Apprentice Programmer, Web&nbsp;Developer and FanFiction&nbsp;Writer</p>
-		<br/><section id="social" appml-data="init">
-			<a appml-repeat="nets" class="social bi-{{net}}" href="{{href}}"></a>
-		</section>
-	</header>
-	<main>
-		<h2>Projects</h2><ul>
-			<li><a href="https://turitoyuenan.github.io/planetPratero">Planet Pratero</a></li>
-			<li><a href="https://turitoyuenan.github.io/MagiRepo">The Magical Girl Box</a></li>
-			<li><a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a></li>
-		</ul>
-		<h2>Articles</h2><ul>
-			<li><a href="articles/pxMilestone.html">pixiv's Milestones</a></li>
-		</ul>
-		<h2>Animations</h2><br/>
-		<section class="grid" id="anims">
-			<iframe src="anims/analogClock.html"></iframe>
-			<iframe src="anims/bouncingBall.html"></iframe>
-		</section>
-	</main>
-	<footer appml-include-html="footer.htm"></footer>
 	<script>
-	var init = {"nets": [
+	var init = {nets: [
 		{net: 'linkedin',  href: 'https://linkedin.com/in/turitoyuenan'},
 		{net: 'github',    href: 'https://github.com/TuritoYuenan'},
 		{net: 'pinterest', href: 'https://pinterest.com/TuritoYuenan'},
@@ -51,4 +29,28 @@
 		{net: 'youtube',   href: 'https://youtube.com/channel/UCgsZkq5widieVHp6oiY8WMw'},
 	]}
 	</script>
+	<header>
+		<h1>Turito Yuenan</h1>
+		<p>Vietnamese Apprentice Programmer, Web&nbsp;Developer and FanFiction&nbsp;Writer</p>
+		<section id="social" appml-data="init">
+			<a appml-repeat="nets" class="social bi-{{net}}" href="{{href}}"></a>
+		</section>
+	</header>
+	<main>
+		<h2>Projects</h2><ul>
+			<li><a href="https://turitoyuenan.github.io/planetPratero">Planet Pratero</a></li>
+			<li><a href="https://turitoyuenan.github.io/knabino-magia">Knabino Magia</a></li>
+			<li><a href="https://turitoyuenan.github.io/MagiRepo">The Magical Girl Box</a></li>
+			<li><a href="https://github.com/TuritoYuenan/Minefetch">Minefetch Mod</a></li>
+		</ul>
+		<h2>Articles</h2><ul>
+			<li><a href="articles/pxMilestone.html">pixiv's Milestones</a></li>
+		</ul>
+		<h2>Animations</h2>
+		<section class="grid" id="anims">
+			<iframe src="anims/analogClock.html"></iframe>
+			<iframe src="anims/bouncingBall.html"></iframe>
+		</section>
+	</main>
+	<footer appml-include-html="footer.htm"></footer>
 </body></html>

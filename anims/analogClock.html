@@ -6,7 +6,6 @@
 </head><body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js">
 	</script><script>
-	const nord4 = [216, 222, 233];
 	let cX, cY, rH, rM, rS, dC
 	function setup() {
 		createCanvas(window.innerWidth, window.innerHeight); noStroke()
@@ -14,13 +13,13 @@
 		rS = rC * 0.72; rM = rC * 0.60; rH = rC * 0.50; dC = rC * 1.8;
 	}
 	function draw() {
-		background(46, 52, 64); fill(59, 66, 82); noStroke(); circle(cx, cy, dC);
-
 		let h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 		let m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
 		let s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
+		
+		noStroke(); fill(59, 66, 82); circle(cx, cy, dC);
 
-		stroke(nord4);
+		stroke(216, 222, 233);
 		strokeWeight(2); line(cx, cy, cx + cos(s) * rS, cy + sin(s) * rS);
 		strokeWeight(4); line(cx, cy, cx + cos(m) * rM, cy + sin(m) * rM);
 		strokeWeight(8); line(cx, cy, cx + cos(h) * rH, cy + sin(h) * rH);
