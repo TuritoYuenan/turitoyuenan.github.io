@@ -1,38 +1,99 @@
 ---
-title: pixiv Illustrations with odd IDs
+title: Special pixiv numbers
 date: 2022-08-14T20:32:22+07:00
 draft: false
 ---
 ![*pixiv's logo*](https://upload.wikimedia.org/wikipedia/commons/7/73/Pixiv_logo.svg)
-Having more than 100 millions works submitted, pixiv is one of the largest illustration platforms and is where the majority of Anime arts come from.  
-During uploading, some of the works got assigned to odd, unique IDs. Here is a list of pixiv illustrations with odd IDs
-# Seven Zeroes
-- [ID 10000000](https://pixiv.net/artworks/10000000)
-- [ID 20000000](https://pixiv.net/artworks/20000000)
-- [ID 50000000](https://pixiv.net/artworks/50000000)
-- [ID 60000000](https://pixiv.net/artworks/60000000)
-- [ID 80000000](https://pixiv.net/artworks/80000000)
-- [ID 90000000](https://pixiv.net/artworks/90000000)
-# Six Zeroes
-- [ID 1000000](https://pixiv.net/artworks/1000000)
-- [ID 61000000](https://pixiv.net/artworks/61000000)
-- [ID 62000000](https://pixiv.net/artworks/62000000)
-- [ID 64000000](https://pixiv.net/artworks/64000000)
-- [ID 65000000](https://pixiv.net/artworks/65000000)
-- [ID 91000000](https://pixiv.net/artworks/91000000)
-- [ID 92000000](https://pixiv.net/artworks/92000000)
-- [ID 93000000](https://pixiv.net/artworks/93000000)
-- [ID 94000000](https://pixiv.net/artworks/94000000)
-- [ID 95000000](https://pixiv.net/artworks/95000000)
-- [ID 96000000](https://pixiv.net/artworks/96000000)
-- [ID 97000000](https://pixiv.net/artworks/97000000)
-- [ID 98000000](https://pixiv.net/artworks/98000000)
-- [ID 99000000](https://pixiv.net/artworks/99000000)
+Here is a list of pixiv Illustration that during uploading, luckily got assigned with special numbers
+# Rounded numbers
+- [100000000](https://pixiv.net/artworks/100000000)
+## Seven Zeroes
+- [10000000](https://pixiv.net/artworks/10000000)
+- [20000000](https://pixiv.net/artworks/20000000)
+- [50000000](https://pixiv.net/artworks/50000000)
+- [60000000](https://pixiv.net/artworks/60000000)
+- [80000000](https://pixiv.net/artworks/80000000)
+- [90000000](https://pixiv.net/artworks/90000000)
+## Six Zeroes
+- [1000000](https://pixiv.net/artworks/1000000)
+- [3000000](https://pixiv.net/artworks/3000000)
+- [4000000](https://pixiv.net/artworks/4000000)
+- [5000000](https://pixiv.net/artworks/5000000)
+- [8000000](https://pixiv.net/artworks/8000000)
+- [13000000](https://pixiv.net/artworks/13000000)
+- [14000000](https://pixiv.net/artworks/14000000)
+- [16000000](https://pixiv.net/artworks/16000000)
+- [17000000](https://pixiv.net/artworks/17000000)
+- [18000000](https://pixiv.net/artworks/18000000)
+- [19000000](https://pixiv.net/artworks/19000000)
+- [22000000](https://pixiv.net/artworks/22000000)
+- [23000000](https://pixiv.net/artworks/23000000)
+- [25000000](https://pixiv.net/artworks/25000000)
+- [26000000](https://pixiv.net/artworks/26000000)
+- [31000000](https://pixiv.net/artworks/31000000)
+- [32000000](https://pixiv.net/artworks/32000000)
+- [35000000](https://pixiv.net/artworks/35000000)
+- [39000000](https://pixiv.net/artworks/39000000)
+- [42000000](https://pixiv.net/artworks/42000000)
+- [45000000](https://pixiv.net/artworks/45000000)
+- [47000000](https://pixiv.net/artworks/47000000)
+- [49000000](https://pixiv.net/artworks/49000000)
+- [51000000](https://pixiv.net/artworks/51000000)
+- [53000000](https://pixiv.net/artworks/53000000)
+- [55000000](https://pixiv.net/artworks/55000000)
+- [57000000](https://pixiv.net/artworks/57000000)
+- [61000000](https://pixiv.net/artworks/61000000)
+- [62000000](https://pixiv.net/artworks/62000000)
+- [63000000](https://pixiv.net/artworks/63000000)
+- [64000000](https://pixiv.net/artworks/64000000)
+- [65000000](https://pixiv.net/artworks/65000000)
+- [66000000](https://pixiv.net/artworks/66000000)
+- [68000000](https://pixiv.net/artworks/68000000)
+- [71000000](https://pixiv.net/artworks/71000000)
+- [73000000](https://pixiv.net/artworks/73000000)
+- [74000000](https://pixiv.net/artworks/74000000)
+- [76000000](https://pixiv.net/artworks/76000000)
+- [78000000](https://pixiv.net/artworks/78000000)
+- [84000000](https://pixiv.net/artworks/84000000)
+- [89000000](https://pixiv.net/artworks/89000000)
+- [91000000](https://pixiv.net/artworks/91000000)
+- [92000000](https://pixiv.net/artworks/92000000)
+- [93000000](https://pixiv.net/artworks/93000000)
+- [94000000](https://pixiv.net/artworks/94000000)
+- [95000000](https://pixiv.net/artworks/95000000)
+- [96000000](https://pixiv.net/artworks/96000000)
+- [97000000](https://pixiv.net/artworks/97000000)
+- [98000000](https://pixiv.net/artworks/98000000)
+- [99000000](https://pixiv.net/artworks/99000000)
+## <=5 Zeroes
+- [3000](https://pixiv.net/artworks/3000)
+- [8000](https://pixiv.net/artworks/8000)
+- [9000](https://pixiv.net/artworks/9000)
+- [10000](https://pixiv.net/artworks/10000)
+- [60000](https://pixiv.net/artworks/60000)
+- [70000](https://pixiv.net/artworks/70000)
+- [80000](https://pixiv.net/artworks/80000)
+- [90000](https://pixiv.net/artworks/90000)
+- [450000](https://pixiv.net/artworks/450000)
+- [1800000](https://pixiv.net/artworks/1800000)
+- [3300000](https://pixiv.net/artworks/3300000)
+- [21400000](https://pixiv.net/artworks/21400000)
+- [80008000](https://pixiv.net/artworks/80008000) - Double 8000
+- [83500000](https://pixiv.net/artworks/83500000)
+# Repetitive
+- [666](https://pixiv.net/artworks/666) - Devil's number
+- [77777](https://pixiv.net/artworks/77777)
+- [666666](https://pixiv.net/artworks/666666) - Devil part 2
+- [888888](https://pixiv.net/artworks/888888)
+- [6666666](https://pixiv.net/artworks/6666666) - Devil part 3, which is in fact a devil illustration :o
+- [7777777](https://pixiv.net/artworks/7777777)
+- [22222222](https://pixiv.net/artworks/22222222)
+- [44444444](https://pixiv.net/artworks/44444444)
+- [55555555](https://pixiv.net/artworks/55555555)
+- [99999999](https://pixiv.net/artworks/99999999)
 # Others
-- [ID 69](https://pixiv.net/artworks/69) - Nice
-- [ID 500](https://pixiv.net/artworks/500) - Five hundo
-- [ID 10000](https://pixiv.net/artworks/10000) - First 5-digit long ID
-- [ID 31415926](https://pixiv.net/artworks/31415926) - 8 digits of π (pi)
-- [ID 80008000](https://pixiv.net/artworks/80008000) - Double 8000
-- [ID 99999999](https://pixiv.net/artworks/99999999) - Last 8-digit long ID
-- [ID 100000000](https://pixiv.net/artworks/100000000) - First 9-digit long ID
+- [69](https://pixiv.net/artworks/69) - Nice
+- [500](https://pixiv.net/artworks/500)
+- [123456](https://pixiv.net/artworks/123456)
+- [345678](https://pixiv.net/artworks/345678)
+- [31415926](https://pixiv.net/artworks/31415926) - 8 digits of π (pi)
