@@ -1,0 +1,123 @@
+baseURL: https://turitoyuenan.github.io/
+title: Turito Yuenan
+theme: PaperMod
+timeZone: Asia/Ho_Chi_Minh
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Turito Yuenan
+  description: Turito's Website
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Turito Yuenan
+  images: [img/turito-wall.jpg]
+  DateFormat: 2006-01-02
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: svg/turito-wbg.svg
+    favicon16x16: svg/turito-wbg.svg
+    favicon32x32: svg/turito-wbg.svg
+    apple_touch_icon: svg/turito-wbg.svg
+    safari_pinned_tab: svg/turito-wbg.svg
+
+  label:
+    text: Turito Yuenan
+    icon: svg/turito-wbg.svg
+    iconHeight: 35
+
+  profileMode:
+    enabled: false
+    title: Turito Yuenan
+    subtitle: Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer
+    imageUrl: svg/turito-wbg.svg
+    imageWidth: 256
+    imageHeight: 256
+    imageTitle: Symbol
+    buttons:
+      - name: Articles
+        url: articles
+      - name: Projects
+        url: projects
+
+  # home-info mode
+  homeInfoParams:
+    Title: Turito Yuenan
+    Content: Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer
+
+  socialIcons:
+    - name: email
+      url: mailto:turitoyuenan@proton.me
+    - name: facebook
+      url: https://facebook.com/TuritoYuenan
+    - name: twitter
+      url: https://twitter.com/TuritoYuenan
+    - name: github
+      url: https://github.com/TuritoYuenan
+    - name: linkedin
+      url: https://linkedin.com/in/TuritoYuenan
+    - name: reddit
+      url: https://reddit.com/u/LeaderTurito
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: [title, permalink, summary, content]
+menu:
+  main:
+    - identifier: articles
+      name: articles
+      url: /articles/
+      weight: 10
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 20
+# https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
