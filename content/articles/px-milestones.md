@@ -7,13 +7,22 @@ draft: false
 Here is a list of pixiv Illustration that during uploading, luckily got assigned with special numbers
 # Rounded numbers
 - [100000000](https://pixiv.net/artworks/100000000)
-## Seven Zeroes
-- [10000000](https://pixiv.net/artworks/10000000)
-- [20000000](https://pixiv.net/artworks/20000000)
-- [50000000](https://pixiv.net/artworks/50000000)
-- [60000000](https://pixiv.net/artworks/60000000)
-- [80000000](https://pixiv.net/artworks/80000000)
-- [90000000](https://pixiv.net/artworks/90000000)
+## <=5 Zeroes
+- [500](https://pixiv.net/artworks/500)
+- [3000](https://pixiv.net/artworks/3000)
+- [8000](https://pixiv.net/artworks/8000)
+- [9000](https://pixiv.net/artworks/9000)
+- [10000](https://pixiv.net/artworks/10000)
+- [60000](https://pixiv.net/artworks/60000)
+- [70000](https://pixiv.net/artworks/70000)
+- [80000](https://pixiv.net/artworks/80000)
+- [90000](https://pixiv.net/artworks/90000)
+- [450000](https://pixiv.net/artworks/450000)
+- [1800000](https://pixiv.net/artworks/1800000)
+- [3300000](https://pixiv.net/artworks/3300000)
+- [21400000](https://pixiv.net/artworks/21400000)
+- [80008000](https://pixiv.net/artworks/80008000) - Double 8000
+- [83500000](https://pixiv.net/artworks/83500000)
 ## Six Zeroes
 - [1000000](https://pixiv.net/artworks/1000000)
 - [3000000](https://pixiv.net/artworks/3000000)
@@ -65,21 +74,13 @@ Here is a list of pixiv Illustration that during uploading, luckily got assigned
 - [97000000](https://pixiv.net/artworks/97000000)
 - [98000000](https://pixiv.net/artworks/98000000)
 - [99000000](https://pixiv.net/artworks/99000000)
-## <=5 Zeroes
-- [3000](https://pixiv.net/artworks/3000)
-- [8000](https://pixiv.net/artworks/8000)
-- [9000](https://pixiv.net/artworks/9000)
-- [10000](https://pixiv.net/artworks/10000)
-- [60000](https://pixiv.net/artworks/60000)
-- [70000](https://pixiv.net/artworks/70000)
-- [80000](https://pixiv.net/artworks/80000)
-- [90000](https://pixiv.net/artworks/90000)
-- [450000](https://pixiv.net/artworks/450000)
-- [1800000](https://pixiv.net/artworks/1800000)
-- [3300000](https://pixiv.net/artworks/3300000)
-- [21400000](https://pixiv.net/artworks/21400000)
-- [80008000](https://pixiv.net/artworks/80008000) - Double 8000
-- [83500000](https://pixiv.net/artworks/83500000)
+## Seven Zeroes
+- [10000000](https://pixiv.net/artworks/10000000)
+- [20000000](https://pixiv.net/artworks/20000000)
+- [50000000](https://pixiv.net/artworks/50000000)
+- [60000000](https://pixiv.net/artworks/60000000)
+- [80000000](https://pixiv.net/artworks/80000000)
+- [90000000](https://pixiv.net/artworks/90000000)
 # Repetitive
 - [666](https://pixiv.net/artworks/666) - Devil's number
 - [77777](https://pixiv.net/artworks/77777)
@@ -93,7 +94,6 @@ Here is a list of pixiv Illustration that during uploading, luckily got assigned
 - [99999999](https://pixiv.net/artworks/99999999)
 # Others
 - [69](https://pixiv.net/artworks/69) - Nice
-- [500](https://pixiv.net/artworks/500)
 - [123456](https://pixiv.net/artworks/123456)
 - [345678](https://pixiv.net/artworks/345678)
 - [31415926](https://pixiv.net/artworks/31415926) - 8 digits of π (pi)
