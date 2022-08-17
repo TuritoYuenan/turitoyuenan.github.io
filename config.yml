@@ -16,9 +16,9 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Turito Yuenan
+  author: Turito Yuenan
   description: Turito's Website
   keywords: [Blog, Portfolio, PaperMod]
-  author: Turito Yuenan
   images: [img/turito-wall.jpg]
   DateFormat: 2006-01-02
   defaultTheme: auto # dark, light
@@ -35,9 +35,9 @@ params:
   disableScrollToTop: false
   comments: false
   hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  hideSummary: true
+  showtoc: true
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -85,11 +85,15 @@ params:
       url: https://linkedin.com/in/TuritoYuenan
     - name: reddit
       url: https://reddit.com/u/LeaderTurito
+    - name: itchio
+      url: https://turitoyuenan.itch.io
+    - name: tumblr
+      url: https://turitoyuenan.tumblr.com
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
   # for search
   # https://fusejs.io/api/options.html

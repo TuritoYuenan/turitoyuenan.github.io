@@ -1,13 +1,14 @@
 ---
 title: Special pixiv numbers
+description: pixiv illustrations with special ID numbers
+cover:
+  image: https://upload.wikimedia.org/wikipedia/commons/7/73/Pixiv_logo.svg
 date: 2022-08-14T20:32:22+07:00
 draft: false
 ---
-![*pixiv's logo*](https://upload.wikimedia.org/wikipedia/commons/7/73/Pixiv_logo.svg)
-Here is a list of pixiv Illustration that during uploading, luckily got assigned with special numbers
-# Rounded numbers
+## Rounded numbers
 - [100000000](https://pixiv.net/artworks/100000000)
-## <=5 Zeroes
+### <=5 Zeroes
 - [500](https://pixiv.net/artworks/500)
 - [3000](https://pixiv.net/artworks/3000)
 - [8000](https://pixiv.net/artworks/8000)
@@ -23,7 +24,7 @@ Here is a list of pixiv Illustration that during uploading, luckily got assigned
 - [21400000](https://pixiv.net/artworks/21400000)
 - [80008000](https://pixiv.net/artworks/80008000) - Double 8000
 - [83500000](https://pixiv.net/artworks/83500000)
-## Six Zeroes
+### Six Zeroes
 - [1000000](https://pixiv.net/artworks/1000000)
 - [3000000](https://pixiv.net/artworks/3000000)
 - [4000000](https://pixiv.net/artworks/4000000)
@@ -74,14 +75,14 @@ Here is a list of pixiv Illustration that during uploading, luckily got assigned
 - [97000000](https://pixiv.net/artworks/97000000)
 - [98000000](https://pixiv.net/artworks/98000000)
 - [99000000](https://pixiv.net/artworks/99000000)
-## Seven Zeroes
+### Seven Zeroes
 - [10000000](https://pixiv.net/artworks/10000000)
 - [20000000](https://pixiv.net/artworks/20000000)
 - [50000000](https://pixiv.net/artworks/50000000)
 - [60000000](https://pixiv.net/artworks/60000000)
 - [80000000](https://pixiv.net/artworks/80000000)
 - [90000000](https://pixiv.net/artworks/90000000)
-# Repetitive
+## Repetitive
 - [666](https://pixiv.net/artworks/666) - Devil's number
 - [77777](https://pixiv.net/artworks/77777)
 - [666666](https://pixiv.net/artworks/666666) - Devil part 2
@@ -92,7 +93,7 @@ Here is a list of pixiv Illustration that during uploading, luckily got assigned
 - [44444444](https://pixiv.net/artworks/44444444)
 - [55555555](https://pixiv.net/artworks/55555555)
 - [99999999](https://pixiv.net/artworks/99999999)
-# Others
+## Others
 - [69](https://pixiv.net/artworks/69) - Nice
 - [123456](https://pixiv.net/artworks/123456)
 - [345678](https://pixiv.net/artworks/345678)

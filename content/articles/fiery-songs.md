@@ -1,15 +1,20 @@
 ---
 title: Songs from the Years of Fire
+description: A short Soviet animation from 1971 about the Russian civil war
+cover:
+  image: https://64.media.tumblr.com/55b60302eacb589a0a5608e6ee5c70f3/8be5a4df565d4e36-dc/s1280x1920/0f5323037e027d074da7a7d48c7e948b46cd0839.png
 date: 2022-08-16T17:47:32+07:00
 draft: false
 ---
-Песни огненных лет (Pesni Ognennykh Let) is a 1971 Soviet abstract animation film that retells the history of the Russian Civil War through the songs of the time. The film consists of five (5) songs in order:
-- Полюшко-поле (Polyushko-polye)
-- Тачанка (Tachanka) - Tachanka
-- Там вдали за пекой (Tam vdali za pekoy) - Far across the river
-- Эшелонная (Eshelonaya) - Echelon's song
-- Красная армия всех сильней - Red army is the strongest
-# Youtube playlist
-{{< iframe "https://youtube.com/embed/videoseries?list=PLN0RqFX2ugKXG5Ug6au2Nc88PeycTRqqW" >}}
-# Spotify playlist
-{{< iframe "https://open.spotify.com/embed/playlist/77Q7cavMy37bf3DUd6El9P" >}}
+[Песни огненных лет](https://ru.wikipedia.org/wiki/Песни_огненных_лет) (Songs from the Years of Fire) is a 1971 Soviet abstract animation film that retells the history of the Russian Civil War through the songs of that time period.
+
+The film, directed by [Inessa Kovalevskaya](https://wikipedia.org/wiki/Inessa_Kovalevskaya), consists of five songs in order:
+- **Полюшко-поле** - Oh field, my field
+- **Тачанка** - Tachanka
+- **Там вдали за рекой** - Far across the river
+- **Эшелонная** - Echelon's song
+- **Красная армия всех сильней** - Red army is the strongest
+## Youtube playlist
+{{< embed "https://youtube.com/embed/videoseries?list=PLN0RqFX2ugKXG5Ug6au2Nc88PeycTRqqW" >}}
+## Spotify playlist
+{{< embed "https://open.spotify.com/embed/playlist/77Q7cavMy37bf3DUd6El9P" >}}
