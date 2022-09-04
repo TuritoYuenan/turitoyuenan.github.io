@@ -54,7 +54,7 @@ params:
     iconHeight: 35
 
   profileMode:
-    enabled: false
+    enabled: true
     title: Turito Yuenan
     subtitle: Vietnamese Apprentice Programmer, Web Developer and FanFiction Writer
     imageUrl: svg/turito-wbg.svg
@@ -75,8 +75,6 @@ params:
   socialIcons:
     - name: email
       url: mailto:turitoyuenan@proton.me
-    - name: facebook
-      url: https://facebook.com/TuritoYuenan
     - name: twitter
       url: https://twitter.com/TuritoYuenan
     - name: github
