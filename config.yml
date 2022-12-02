@@ -113,6 +113,10 @@ menu:
       name: projects
       url: /projects/
       weight: 2
+    - identifier: presentations
+      name: presentations
+      url: /presentations/
+      weight: 3
 # https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
