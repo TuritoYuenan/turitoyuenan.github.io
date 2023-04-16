@@ -2,7 +2,7 @@
 title: About Me
 description: mainpage, about me
 date: 2023-02-15T21:17:16+07:00
-draft: true
+draft: false
 ---
 *(reading style: informal/casual; pc view recommended)*
 
