@@ -1,0 +1,51 @@
+languageCode: en-us
+baseURL: http://turitoyuenan.github.io
+title: turito yuenan
+
+params:
+  profilePicture: /favicon.svg
+  socialIcons:
+    - icon: fas fa-envelope
+      name: email
+      url: mailto:turitoyuenan@proton.me
+    - icon: fab fa-github
+      name: github
+      url: https://github.com/TuritoYuenan
+    - icon: fab fa-itch-io
+      name: itchio
+      url: https://turitoyuenan.itch.io
+    - icon: fab fa-tumblr
+      name: tumblr
+      url: https://turitoyuenan.tumblr.com
+    - icon: fab fa-linkedin
+      name: linkedin
+      url: https://linkedin.com/in/TuritoYuenan
+    - icon: fab fa-reddit
+      name: reddit
+      url: https://reddit.com/u/LeaderTurito
+    - icon: fab fa-twitter
+      name: twitter
+      url: https://twitter.com/TuritoYuenan
+
+menu:
+  main:
+    - identifier: articles
+      name: articles
+      url: /articles/
+      weight: 143
+    - identifier: works
+      name: works
+      url: /works/
+      weight: 314
+    - identifier: knabino
+      name: magical girl's
+      url: /magical-girl/
+      weight: 667
+    - identifier: anims
+      name: animations
+      url: /animations/
+      weight: 777
+    - identifier: revealjs
+      name: presentations
+      url: /presentations/
+      weight: 993

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Analog Clock using p5.js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style-anim.css">
+</head>
+
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js">
+	</script>
+	<script>
+		let cX, cY, rH, rM, rS, dC
+		function setup() {
+			createCanvas(window.innerWidth, window.innerHeight); noStroke()
+			let rC = min(width, height) / 2; cx = width / 2; cy = height / 2;
+			rS = rC * 0.72; rM = rC * 0.60; rH = rC * 0.50; dC = rC * 1.8;
+		}
+		function draw() {
+			let h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
+			let m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
+			let s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
+
+			noStroke(); fill(59, 66, 82); circle(cx, cy, dC);
+
+			stroke(216, 222, 233);
+			strokeWeight(2); line(cx, cy, cx + cos(s) * rS, cy + sin(s) * rS);
+			strokeWeight(4); line(cx, cy, cx + cos(m) * rM, cy + sin(m) * rM);
+			strokeWeight(8); line(cx, cy, cx + cos(h) * rH, cy + sin(h) * rH);
+		}
+	</script>
+</body>
+
+</html>
