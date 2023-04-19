@@ -13,7 +13,11 @@ The film, directed by [Inessa Kovalevskaya](https://wikipedia.org/wiki/Inessa_Ko
 - **Там вдали за рекой** - Far across the river
 - **Эшелонная** - Echelon's song
 - **Красная армия всех сильней** - Red army is the strongest
+
 ## Youtube playlist
+
 {{< embed "https://www.youtube-nocookie.com/embed/videoseries?list=PLN0RqFX2ugKXG5Ug6au2Nc88PeycTRqqW" >}}
+
 ## Spotify playlist
+
 {{< embed "https://open.spotify.com/embed/playlist/77Q7cavMy37bf3DUd6El9P" >}}

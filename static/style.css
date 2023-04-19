@@ -66,11 +66,24 @@ header .icon {
 	border-radius: 25%;
 }
 
-/* IMAGES */
+.list a {
+	margin: 1em 0;
+	display: block;
+}
+
+.list a::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 
 .list .thumbnail {
-	max-width: 8em;
+	max-width: 250px;
+	width: 100%;
 	height: auto;
+	margin-right: 1em;
+	border-radius: 1em;
+	float: left;
 }
 
 .wave {
@@ -84,7 +97,7 @@ header .icon {
 /* TEXTS */
 
 h1, h2, h3, h4, h5, h6 {
-	margin: .5em 0;
+	margin: .3em 0;
 }
 
 a {
@@ -94,12 +107,6 @@ a {
 
 a:hover:not(.fas, .fab) {
 	text-decoration: underline;
-}
-
-.list a {
-	margin: 1em 0;
-	display: flex;
-	gap: 1em;
 }
 
 nav a, .list a, .fas, .fab, header .title {
@@ -114,6 +121,24 @@ nav a, .list a, .fas, .fab, header .title {
 
 /* RESPONSIVE-NESS */
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
 	main {width: auto;}
+}
+
+@media (max-width: 600px) {
+	header .title {
+		text-align: center;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.list a {
+		text-align: center;
+	}
+
+	.list .thumbnail {
+		margin: auto;
+		float: none;
+		display: block;
+	}
 }

@@ -36,8 +36,8 @@ hi i am turito, currently a high school student. i like to code (it's my future 
 
 genres:
 
-- some orchestral songs
-- politic song (i just thought they sound cool) like those posted by [Ingen](https://youtube.com/playlist?list=PLN0RqFX2ugKVjp6nJQXBnkLOpKdvQPJFZ)
+- orchestral songs
+- political songs (i just thought they sound cool) like those posted by [Ingen](https://youtube.com/playlist?list=PLN0RqFX2ugKVjp6nJQXBnkLOpKdvQPJFZ)
 - EDM include: bigroom, hardstyle, dubstep (just casual genres)
 - game ost from undertale, omori, oneshot, minecraft
 
