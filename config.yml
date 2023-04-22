@@ -5,26 +5,23 @@ title: turito yuenan
 params:
   profilePicture: /favicon.svg
   socialIcons:
-    - icon: fas fa-envelope
-      name: email
+    - name: email
+      icon: bi-envelope-fill
       url: mailto:turitoyuenan@proton.me
-    - icon: fab fa-github
-      name: github
+    - name: github
+      icon: bi-github
       url: https://github.com/TuritoYuenan
-    - icon: fab fa-itch-io
-      name: itchio
-      url: https://turitoyuenan.itch.io
-    - icon: fab fa-tumblr
-      name: tumblr
-      url: https://turitoyuenan.tumblr.com
-    - icon: fab fa-linkedin
-      name: linkedin
+    - name: linkedin
+      icon: bi-linkedin
       url: https://linkedin.com/in/TuritoYuenan
-    - icon: fab fa-reddit
-      name: reddit
+    - name: pinterest
+      icon: bi-pinterest
+      url: https://pinterest.com/TuritoYuenan
+    - name: reddit
+      icon: bi-reddit
       url: https://reddit.com/u/LeaderTurito
-    - icon: fab fa-twitter
-      name: twitter
+    - name: twitter
+      icon: bi-twitter
       url: https://twitter.com/TuritoYuenan
 
 menu:
@@ -45,7 +42,3 @@ menu:
       name: animations
       url: /animations/
       weight: 777
-    - identifier: revealjs
-      name: presentations
-      url: /presentations/
-      weight: 993

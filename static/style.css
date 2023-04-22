@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 @import url(catppuccin.css);
 
 /* BLOCKS */
@@ -21,6 +22,34 @@ footer {
 	background: var(--ctp-macchiato-surface0);
 }
 
+header {
+	padding: 1em;
+	background: var(--ctp-macchiato-text);
+	color: var(--ctp-macchiato-base);
+	border-radius: 0 0 50% 50%;
+}
+
+header .icon {
+	height: 5em;
+	border-radius: 25%;
+}
+
+header .title {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+header .title h1 {
+	font-size: 2.5em;
+}
+
+blockquote {
+	margin: 1em 0;	padding: 1em;
+	background: var(--ctp-macchiato-surface0);
+}
+
 nav {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -31,7 +60,6 @@ nav {
 nav a {
 	padding: 1em;
 	background: var(--ctp-macchiato-base);
-	border-radius: 1em;
 }
 
 nav a:hover {
@@ -44,28 +72,6 @@ nav a:hover {
 #anims:hover    {background: var(--ctp-macchiato-blue);}
 #revealjs:hover {background: var(--ctp-macchiato-mauve);}
 
-/* Header */
-
-header {
-	/* background: var(--sv-1); */
-	background: var(--ctp-macchiato-text);
-	color: var(--ctp-macchiato-base);
-	border-radius: 0 0 50% 50%;
-}
-
-header .title {
-	padding: 1em;
-	display: flex;
-	gap: 1em;
-	align-items: center;
-	justify-content: center;
-}
-
-header .icon {
-	height: 5em;
-	border-radius: 25%;
-}
-
 .list a {
 	margin: 1em 0;
 	display: block;
@@ -77,13 +83,20 @@ header .icon {
 	display: table;
 }
 
-.list .thumbnail {
+.list img {
 	max-width: 250px;
 	width: 100%;
 	height: auto;
 	margin-right: 1em;
-	border-radius: 1em;
 	float: left;
+}
+
+.page__thumb img {
+	margin: .5em 0;
+}
+
+nav a, .list img, .page__thumb img, blockquote {
+	border-radius: 1em;
 }
 
 .wave {
@@ -96,8 +109,8 @@ header .icon {
 
 /* TEXTS */
 
-h1, h2, h3, h4, h5, h6 {
-	margin: .3em 0;
+h1, h2, h3, h4, h5, h6, p {
+	margin: .5em 0;
 }
 
 a {
@@ -105,13 +118,12 @@ a {
 	text-decoration: none;
 }
 
-a:hover:not(.fas, .fab) {
+a:hover {
 	text-decoration: underline;
 }
 
-nav a, .list a, .fas, .fab, header .title {
+nav a, .list a, .social a, header .title {
 	color: inherit;
-	text-decoration: none;
 }
 
 ::selection {
@@ -126,6 +138,10 @@ nav a, .list a, .fas, .fab, header .title {
 }
 
 @media (max-width: 600px) {
+	header {
+		border-radius: 0;
+	}
+
 	header .title {
 		text-align: center;
 		flex-direction: column;
@@ -136,7 +152,7 @@ nav a, .list a, .fas, .fab, header .title {
 		text-align: center;
 	}
 
-	.list .thumbnail {
+	.list img {
 		margin: auto;
 		float: none;
 		display: block;
