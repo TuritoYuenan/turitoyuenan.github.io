@@ -23,6 +23,9 @@ params:
     - name: twitter
       icon: bi-twitter
       url: https://twitter.com/TuritoYuenan
+    - name: youtube
+      icon: bi-youtube
+      url: https://youtube.com/@TuritoYuenan
 
 menu:
   main:

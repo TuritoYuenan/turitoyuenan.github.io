@@ -9,7 +9,7 @@ draft: false
 hi i am turito, currently a high school student. i like to code (it's my future job), do english exercises and daydreaming about the fictions i wanna write.
 
 - **from**: [yuenan](https://wikipedia.org/wiki/Yuenan) (it's in my nickname)
-- **age**: grade 12 student (April 2023)
+- **age**: high school student (April 2023)
 - **favorite color**: Blue, Amber yellow
 
 ## coding experience
@@ -23,7 +23,7 @@ hi i am turito, currently a high school student. i like to code (it's my future 
 - **Kotlin** for Android Apps
 - **Lua** for Roblox Games
 
-## my hobbies
+## hobbies
 
 - listening to music
 - learning languages (linguistics)

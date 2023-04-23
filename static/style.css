@@ -46,7 +46,7 @@ header .title h1 {
 }
 
 blockquote {
-	margin: 1em 0;	padding: 1em;
+	margin: 1em 0; padding: .5em 1em;
 	background: var(--ctp-macchiato-surface0);
 }
 
