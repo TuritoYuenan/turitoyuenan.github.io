@@ -1,31 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 @import url(catppuccin.css);
 
+* {
+	box-sizing: border-box;
+}
+
 /* BLOCKS */
 
 body {
 	margin: 0;
-	background: var(--ctp-macchiato-base);
-	color: var(--ctp-macchiato-text);
+	background: var(--ctpmac-base);
+	color: var(--ctpmac-text);
 	font: normal x-large Verdana, sans-serif;
+}
+
+main, header, footer {
+	padding: 1rem;
 }
 
 main {
 	width: 1280px;
 	min-height: 50vh;
 	margin: auto;
-	padding: 1em;
 }
 
 footer {
-	padding: 1em;
-	background: var(--ctp-macchiato-surface0);
+	background: var(--ctpmac-surface0);
 }
 
 header {
-	padding: 1em;
-	background: var(--ctp-macchiato-text);
-	color: var(--ctp-macchiato-base);
+	background: var(--ctpmac-text);
+	color: var(--ctpmac-base);
 	border-radius: 0 0 50% 50%;
 }
 
@@ -47,7 +52,7 @@ header .title h1 {
 
 blockquote {
 	margin: 1em 0; padding: .5em 1em;
-	background: var(--ctp-macchiato-surface0);
+	background: var(--ctpmac-surface0);
 }
 
 nav {
@@ -59,18 +64,18 @@ nav {
 
 nav a {
 	padding: 1em;
-	background: var(--ctp-macchiato-base);
+	background: var(--ctpmac-base);
 }
 
 nav a:hover {
-	color: var(--ctp-macchiato-base);
+	color: var(--ctpmac-base);
 }
 
-#articles:hover {background: var(--ctp-macchiato-red);}
-#works:hover    {background: var(--ctp-macchiato-peach);}
-#knabino:hover  {background: var(--ctp-macchiato-teal);}
-#anims:hover    {background: var(--ctp-macchiato-blue);}
-#revealjs:hover {background: var(--ctp-macchiato-mauve);}
+nav a:nth-child(1):hover {background: var(--ctpmac-red);}
+nav a:nth-child(2):hover {background: var(--ctpmac-peach);}
+nav a:nth-child(3):hover {background: var(--ctpmac-teal);}
+nav a:nth-child(4):hover {background: var(--ctpmac-blue);}
+nav a:nth-child(5):hover {background: var(--ctpmac-mauve);}
 
 .list a {
 	margin: 1em 0;
@@ -104,17 +109,17 @@ nav a, .list img, .page__thumb img, blockquote {
 }
 
 .wave path {
-	fill: var(--ctp-macchiato-surface0);
+	fill: var(--ctpmac-surface0);
 }
 
 /* TEXTS */
 
 h1, h2, h3, h4, h5, h6, p {
-	margin: .5em 0;
+	margin: .5rem 0;
 }
 
 a {
-	color: var(--ctp-macchiato-peach);
+	color: var(--ctpmac-peach);
 	text-decoration: none;
 }
 
@@ -127,8 +132,8 @@ nav a, .list a, .social a, header .title {
 }
 
 ::selection {
-	background-color: var(--ctp-macchiato-text);
-	color: var(--ctp-macchiato-base);
+	background-color: var(--ctpmac-text);
+	color: var(--ctpmac-base);
 }
 
 /* RESPONSIVE-NESS */
