@@ -1,6 +1,6 @@
 languageCode: en-us
 baseURL: http://turitoyuenan.github.io
-title: turito yuenan
+title: Turito Yuenan
 
 params:
   profilePicture: /favicon.svg

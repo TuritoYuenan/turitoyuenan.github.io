@@ -9,7 +9,10 @@
 		<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail" class="thumbnail" />
 		<div>
 			<h2>{{.Title}}</h2>
-			<p><small>{{.Date.Format "2006/01/02"}}</small> &bullet; {{.Description}}</p>
+			<p class="description">
+				<small>{{.Date.Format "2006/01/02"}}</small>
+				&bullet; {{.Description}}
+			</p>
 		</div>
 	</a>
 	{{end}}

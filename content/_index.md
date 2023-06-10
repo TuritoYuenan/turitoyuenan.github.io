@@ -8,22 +8,32 @@ draft: false
 
 hi i am turito, currently a high school student. i like to code (it's my future job), do english exercises and daydreaming about the fictions i wanna write.
 
-- **from**: [yuenan](https://wikipedia.org/wiki/Yuenan) (it's in my nickname)
-- **age**: high school student (April 2023)
-- **favorite color**: Blue, Amber yellow
+## Coding Experience
 
-## coding experience
+### Web
 
 - **HTML, CSS, JS** for Web
 - **Svelte** for Web Apps
-- **Python** for Scripts
-- **YAML** for Configuration
-- **Markdown** for Documents (not really coding)
-- **Java** for Minecraft Mods
+- **React Remotion** for Videos
+
+### Software
+
 - **Kotlin** for Android Apps
+- **Python** for Discord Bots
+- **Java** for Minecraft Mods
 - **Lua** for Roblox Games
 
-## hobbies
+### Others
+
+- **YAML** for Configuration
+- **Markdown** for Documents
+
+## Certifications
+
+- International English Language Testing System 7.0 (2022-Sep01)
+- Microsoft Office Specialist 981 (2022-May21)
+
+## Hobbies
 
 - listening to music
 - learning languages (linguistics)
@@ -32,23 +42,19 @@ hi i am turito, currently a high school student. i like to code (it's my future 
 - pinterest and reddit
 - procrastinating
 
-## favorite music
+## Favorite Music
 
-genres:
+### genres:
 
-- orchestral songs
-- political songs (i just thought they sound cool) like those posted by [Ingen](https://youtube.com/playlist?list=PLN0RqFX2ugKVjp6nJQXBnkLOpKdvQPJFZ)
-- EDM include: bigroom, hardstyle, dubstep (just casual genres)
-- game ost from undertale, omori, oneshot, minecraft
+- Orchestral music
+- [Political music](https://youtube.com/playlist?list=PLN0RqFX2ugKVjp6nJQXBnkLOpKdvQPJFZ) (i just thought they sound cool)
+- Video game soundtracks (Touhou Project, Undertale, OMORI, Minecraft...)
 
-artists:
+### artists:
 
-- Red Army Choir
+- ZUN
 - Two Steps from Hell
-- FAUN
-- dArtagnan
-- Pegboard Nerds
-- Tristam
+- dArtagnan & FAUN
+- Pegboard Nerds & Tristam
 - Clean Bandit (at least the old ones)
 - Sub Urban & AURORA
-- F-777
