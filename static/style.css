@@ -77,18 +77,18 @@ nav a:nth-child(3):hover {background: var(--ctpmac-teal);}
 nav a:nth-child(4):hover {background: var(--ctpmac-blue);}
 nav a:nth-child(5):hover {background: var(--ctpmac-mauve);}
 
-.list a {
+#list a {
 	margin: 1em 0;
 	display: block;
 }
 
-.list a::after {
+#list a::after {
 	content: "";
 	clear: both;
 	display: table;
 }
 
-.list img {
+#list img {
 	max-width: 250px;
 	width: 100%;
 	height: auto;
@@ -100,16 +100,20 @@ nav a:nth-child(5):hover {background: var(--ctpmac-mauve);}
 	margin: .5em 0;
 }
 
-nav a, .list img, .page__thumb img, blockquote {
+nav a, #list img, .page__thumb img, blockquote {
 	border-radius: 1em;
 }
 
-.wave {
+#wave {
 	display: block;
 }
 
-.wave path {
+#wave path {
 	fill: var(--ctpmac-surface0);
+}
+
+#sign404 {
+	text-align: center;
 }
 
 /* TEXTS */
@@ -131,7 +135,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-nav a, .list a, .social a, header .title {
+nav a, #list a, .social a, header .title {
 	color: inherit;
 }
 
@@ -157,11 +161,11 @@ nav a, .list a, .social a, header .title {
 		gap: 0;
 	}
 
-	.list a {
+	#list a {
 		text-align: center;
 	}
 
-	.list img {
+	#list img {
 		margin: auto;
 		float: none;
 		display: block;
