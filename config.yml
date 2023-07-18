@@ -41,7 +41,3 @@ menu:
       name: magical girl's
       url: /magical-girl/
       weight: 667
-    - identifier: anims
-      name: animations
-      url: /animations/
-      weight: 777
