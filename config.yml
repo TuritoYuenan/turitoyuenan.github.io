@@ -41,3 +41,16 @@ menu:
       name: magical girl's
       url: /magical-girl/
       weight: 667
+  frontpage:
+    - identifier: certs
+      name: Certifications
+      url: /certifications/
+      weight: 1
+    - identifier: coding
+      name: Coding Experiences
+      url: /coding-experiences/
+      weight: 2
+    - identifier: music
+      name: Music Preferences
+      url: /music-preferences/
+      weight: 3

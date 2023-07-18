@@ -1,6 +1,6 @@
 ---
 title: Certifications
-description: 
+description: My qualifications
 date: 2023-07-06T12:34:25+07:00
 draft: false
 ---

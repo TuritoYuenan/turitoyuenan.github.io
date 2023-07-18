@@ -4,3 +4,8 @@
 		<h1>{{ .Site.Title }}</h1>
 	</a>
 </header>
+<nav id="topnav">
+	{{range .Site.Menus.main}}
+	<a href="{{.URL}}" id="{{.Identifier}}">{{.Name}}</a>
+	{{end}}
+</nav>
