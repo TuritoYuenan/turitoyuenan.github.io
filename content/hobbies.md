@@ -2,7 +2,7 @@
 title: Hobbies
 description: 
 date: 2023-07-06T12:34:36+07:00
-draft: true
+draft: false
 ---
 
 - listening to music

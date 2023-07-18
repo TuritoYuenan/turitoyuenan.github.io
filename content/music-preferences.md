@@ -2,7 +2,7 @@
 title: Music Preferences
 description: 
 date: 2023-07-06T12:34:46+07:00
-draft: true
+draft: false
 ---
 
 ### genres:
