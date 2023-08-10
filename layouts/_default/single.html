@@ -1,9 +1,9 @@
 {{define "main"}}
-<div>
-	<h1>{{.Title}}</h1>
-	<p><span class="date">{{.Date.Format "2006-01-02"}}</span> &bullet; {{.Description}}</p>
-</div>
 <article>
+	<div>
+		<h1>{{.Title}}</h1>
+		<p><span class="date">{{.Date.Format "2006-01-02"}}</span> &bullet; {{.Description}}</p>
+	</div>
 	{{.Content}}
 </article>
 {{end}}
