@@ -1,0 +1,10 @@
+<nav>
+	<a href="https://turitoyuenan.pages.dev/" id="wordmark">
+		<img src="https://turitoyuenan.pages.dev/wordmark.svg" width="380" height="125" alt="Wordmark" />
+	</a>
+	<div id="nav__menu">
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL }}" style="color: var(--ctp-macchiato-{{ .Params.color }});">{{ .Name }}</a>
+		{{ end }}
+	</div>
+</nav>

@@ -3,22 +3,24 @@
 
 <head>
 	<meta charset="UTF-8">
+	
+	<title>{{ replace .Name "-" " " | title }} | {{ .Site.Title}}</title>
+	<meta name="description" content="{{ .Page.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>{{ replace .Name "-" " " | title }} | {{ .Site.Title}}</title>
-
 	<link rel="stylesheet" href="/style.css" />
-
-	<link rel="icon" href="/favicon.ico">
 	<link rel="icon" href="/favicon.svg">
+	{{- block "head" . }}{{- end }}
 </head>
 
 <body>
-	{{- partial "header.html" . -}}
-	<main>
-		{{- block "main" . }}{{- end }}
-	</main>
-	{{- partial "footer.html" . -}}
+	<div style="display: contents;">
+		{{- partial "navbar.html" . -}}
+		<main>
+			{{- block "main" . }}{{- end }}
+		</main>
+		{{- partial "footer.html" . -}}
+	</div>
 </body>
 
 </html>
