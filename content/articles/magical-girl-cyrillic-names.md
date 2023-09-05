@@ -3,13 +3,12 @@ title: Magical Girl Cyrillic Names
 description: Cyrillic names for Magical girls
 date: 2022-06-15T10:41:00+07:00
 draft: false
-thumbnail: /img/placeholder.jpg
+thumbnail: /thumbnails/blank.webp
 ---
 
 ## Madoka Magica
 
-### Holy Quintet
-
+- Nagisa Momoe -> **Нагиса Момоэ**
 - Mami Tomoe -> **Мами Томоэ**
 - Kyoko Sakura -> **Кёко Сакура**
 - Sayaka Miki -> **Саяка Мики**
@@ -17,10 +16,6 @@ thumbnail: /img/placeholder.jpg
 - Homura Akemi -> **Хомура Акэми** (Russian) or **Гомура Акeмі** (Ukrainian)
 
 > The Russian one is pronounced as "Khomura" while the Ukrainian one is the more accurate "Homura"
-
-### from Movie 3
-
-- Nagisa Momoe -> **Нагиса Момоэ**
 
 ## Sailor Moon
 

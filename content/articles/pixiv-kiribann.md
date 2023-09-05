@@ -3,7 +3,7 @@ title: pixiv Kiribann
 description: pixiv illustrations with special numbers
 date: 2022-08-14T20:32:22+07:00
 draft: true
-thumbnail: /img/thumb_1.jpg
+thumbnail: /thumbnails/pixiv-kiribann.webp
 ---
 with 100 million illustrations exceeded in late 2022, pixiv is one of the largest artwork sharing site (there's a chance one of your favorite anime art is on it :o). some of those artworks are coincidentally assigned with special id numbers (mostly rounded ones).
 

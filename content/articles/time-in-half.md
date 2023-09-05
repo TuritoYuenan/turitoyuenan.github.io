@@ -3,7 +3,7 @@ title: Breaking a Time Period in Half
 description: A fun thought experiment about time
 date: 2023-02-17T21:22:32+07:00
 draft: false
-thumbnail: /img/placeholder.jpg
+thumbnail: /thumbnails/blank.webp
 ---
 
 It's not really a techinique or anything. I was watching a Vsauce video and he made a statement that shows the perspective of time, of history that I find cool. So I would like to share how you can make a similar statement.
