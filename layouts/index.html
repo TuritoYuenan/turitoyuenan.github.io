@@ -1,15 +1,40 @@
+{{define "head"}}
+<style>
+	main {
+		min-height: 77vh;
+	}
+
+	header {
+		max-width: 1000px;
+		margin: auto;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	header h1 {
+		margin-bottom: 1rem;
+	}
+
+	header a {
+		width: fit-content;
+		margin: auto;
+		padding: 1rem;
+		display: block;
+
+		/* styling */
+		background: var(--ctp-macchiato-red);
+		color: var(--ctp-macchiato-base);
+		border-radius: 1rem;
+	}
+</style>
+{{end}}
+
 {{define "main"}}
-<div>
-	<h1>{{.Title}}</h1>
-</div>
+<header>
+	<h1>New website:</h1>
+	<a href="https://turitoyuenan.pages.dev">turitoyuenan.pages.dev</a>
+</header>
 <article>
 	{{.Content}}
-	<nav id="front-page-grid">
-		{{range .Site.Menus.frontpage}}
-		<a href="{{.URL}}" id="{{.Identifier}}">
-			<h3>{{.Name}}</h3>
-		</a>
-		{{end}}
-	</nav>
 </article>
 {{end}}

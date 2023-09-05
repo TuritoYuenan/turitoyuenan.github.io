@@ -1,17 +1,50 @@
+{{define "head"}}
+<style>
+	header {
+		padding: 2rem;
+		background: var(--ctp-macchiato-crust);
+		color: var(--ctp-macchiato-red);
+	}
+
+	section {
+		max-width: 120ch;
+		margin: auto;
+		padding: 1rem;
+	}
+
+	section a {
+		padding: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		color: inherit;
+	}
+
+	.thumbnail img {
+		max-width: 16ch;
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 1rem;
+	}
+</style>
+{{end}}
+
 {{define "main"}}
-<h1>{{replace .Name "-" " " | title}}</h1>
-<article>
-	{{.Content}}
-</article>
-<hr/>
-<section id="list">
+<header>
+	<h1>{{replace .Name "-" " " | title}}</h1>
+	<p>{{.Page.Description}}</p>
+</header>
+<section id="section">
 	{{range .Pages}}
 	<a href="{{.Permalink}}">
-		<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail" class="thumbnail" />
+		<div class="thumbnail">
+			<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail for '{{.Page.Title}}'" width="1024" height="768" />
+		</div>
 		<div>
 			<h2>{{.Title}}</h2>
-			<p class="description">
-				<small>{{.Date.Format "2006/01/02"}}</small>
+			<p>
+				<small>{{.Date.Format "02-Jan-2006"}}</small>
 				&bullet; {{.Description}}
 			</p>
 		</div>

@@ -4,12 +4,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 	margin: .5rem 0;
 }
 
-h1, h2, h3 {
+h1 {
 	font-variant: small-caps;
+	font-size: 3em;
 }
 
 a {
-	color: var(--ctpmac-peach);
+	color: var(--ctp-macchiato-peach);
 	text-decoration: none;
 }
 
@@ -17,11 +18,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-nav a, #list a, .social a, header .title {
-	color: inherit;
-}
-
 ::selection {
-	background-color: var(--ctpmac-text);
-	color: var(--ctpmac-base);
+	background-color: var(--ctp-macchiato-text);
+	color: var(--ctp-macchiato-base);
 }
