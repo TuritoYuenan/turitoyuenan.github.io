@@ -2,27 +2,25 @@ languageCode: en-us
 baseURL: http://turitoyuenan.github.io
 title: Turito Yuenan CMS
 
-params:
-  profilePicture: /favicon.svg
-  socialIcons:
-    - name: email
-      icon: bi-envelope-fill
-      url: mailto:turitoyuenan@proton.me
-    - name: github
-      icon: bi-github
-      url: https://github.com/TuritoYuenan
-    - name: linkedin
-      icon: bi-linkedin
-      url: https://linkedin.com/in/TuritoYuenan
-    - name: pinterest
-      icon: bi-pinterest
-      url: https://pinterest.com/TuritoYuenan
-    - name: reddit
-      icon: bi-reddit
-      url: https://reddit.com/u/LeaderTurito
-    - name: twitter
-      icon: bi-twitter
-      url: https://twitter.com/TuritoYuenan
-    - name: youtube
-      icon: bi-youtube
-      url: https://youtube.com/@TuritoYuenan
+menu:
+  main:
+    - name: Articles
+      pageRef: /articles
+      params:
+        color: red
+      weight: 1
+    - name: Projects
+      url: https://turitoyuenan.pages.dev/projects
+      params:
+        color: peach
+      weight: 2
+    - name: Connect
+      url: https://turitoyuenan.pages.dev/connect
+      params:
+        color: green
+      weight: 3
+    - name: My CV
+      pageRef: /cvitae
+      params:
+        color: blue
+      weight: 4
