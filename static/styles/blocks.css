@@ -3,7 +3,7 @@
 :root {
 	background: var(--ctp-macchiato-base);
 	color: var(--ctp-macchiato-text);
-	font: normal large 'Trebuchet MS', sans-serif;
+	font: normal large 'Work Sans', sans-serif;
 }
 
 * {
@@ -12,6 +12,10 @@
 
 body {
 	margin: 0;
+}
+
+main {
+	min-height: 77vh;
 }
 
 footer {
@@ -36,10 +40,6 @@ blockquote {
 hr {
 	margin-top: 1rem;
 	border: 2pt solid var(--ctp-macchiato-text);
-}
-
-#sign404 {
-	text-align: center;
 }
 
 /* RESPONSIVE DESIGN */
