@@ -6,7 +6,7 @@
 		{
 			"label": "Serve site",
 			"type": "shell",
-			"command": "hugo server",
+			"command": "hugo server --minify",
 			"problemMatcher": [],
 			"group": {
 				"kind": "test",
@@ -16,7 +16,7 @@
 		{
 			"label": "Build site",
 			"type": "shell",
-			"command": "hugo",
+			"command": "hugo --minify",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",

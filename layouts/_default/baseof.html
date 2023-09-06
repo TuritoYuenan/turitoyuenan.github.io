@@ -8,12 +8,19 @@
 	<meta name="description" content="{{ .Page.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="/style.css" />
-	<link rel="icon" href="/favicon.svg">
+	{{ $globalStyle := resources.Get "global.css"}}
+	{{ $navbarStyle := resources.Get "navbar.css"}}
+	{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+	{{ $favicon := resources.Get "favicon.svg" | fingerprint }}
+	<link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/x-icon">
+
 	{{- block "head" . }}{{- end }}
 </head>
 
 <body>
+	<script>0</script>
 	<div style="display: contents;">
 		{{- partial "navbar.html" . -}}
 		<main>
