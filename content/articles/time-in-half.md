@@ -2,7 +2,7 @@
 title: Breaking a Time Period in Half
 description: A fun thought experiment about time
 date: 2023-02-17T21:22:32+07:00
-draft: false
+draft: true
 thumbnail: /thumbnails/blank.webp
 ---
 

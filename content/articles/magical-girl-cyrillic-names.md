@@ -2,7 +2,7 @@
 title: Magical Girl Cyrillic Names
 description: Cyrillic names for Magical girls
 date: 2022-06-15T10:41:00+07:00
-draft: false
+draft: true
 thumbnail: /thumbnails/blank.webp
 ---
 
