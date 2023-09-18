@@ -7,20 +7,20 @@ menu:
     - name: Articles
       pageRef: /articles
       params:
-        color: red
+        color: var(--ctp-macchiato-red)
       weight: 1
     - name: Projects
       url: https://turitoyuenan.pages.dev/projects
       params:
-        color: peach
+        color: var(--ctp-macchiato-peach)
       weight: 2
     - name: Connect
       url: https://turitoyuenan.pages.dev/connect
       params:
-        color: green
+        color: var(--ctp-macchiato-green)
       weight: 3
     - name: My CV
       pageRef: /cvitae
       params:
-        color: blue
+        color: var(--ctp-macchiato-blue)
       weight: 4
