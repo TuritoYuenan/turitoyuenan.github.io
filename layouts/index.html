@@ -1,9 +1,9 @@
 {{define "head"}}
-{{ $heroStyle := resources.Get "styles/hero.css" }}
-{{ $homeheadingStyle := resources.Get "styles/home-heading.css" }}
+{{ $hero := resources.Get "styles/hero.css" }}
+{{ $headings := resources.Get "styles/home-heading.css" }}
+{{ $homepageStyle := slice $hero $headings | resources.Concat "homepage.css" | minify | fingerprint }}
 
-<link rel="stylesheet" href="{{ $heroStyle.Permalink }}">
-<link rel="stylesheet" href="{{ $homeheadingStyle.Permalink }}">
+<link rel="stylesheet" href="{{ $homepageStyle.Permalink }}">
 {{end}}
 
 {{define "main"}}

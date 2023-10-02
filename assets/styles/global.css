@@ -60,13 +60,13 @@ h3 {
 }
 
 a {
-	color: var(--haikei-cyan);
+	color: var(--haikei-yellow);
 	text-decoration: none;
 	transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 a:hover {
-	background-color: var(--haikei-cyan);
+	background-color: var(--haikei-yellow);
 	color: var(--haikei-black);
 }
 
