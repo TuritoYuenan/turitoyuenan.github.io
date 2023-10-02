@@ -38,6 +38,10 @@ nav {
 		padding: 0.5rem;
 		background: var(--haikei-black);
 		border-radius: 50%;
+
+		&:hover {
+			scale: 1.2;
+		}
 	}
 
 	& img {

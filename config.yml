@@ -5,7 +5,7 @@ title: The Internerdt
 menu:
   main:
     - name: Contents
-      pageRef: /articles
+      pageRef: /contents
       params:
         symbol: feed
       weight: 1
