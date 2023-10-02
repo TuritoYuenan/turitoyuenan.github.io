@@ -1,26 +1,26 @@
 languageCode: en-us
 baseURL: http://turitoyuenan.github.io
-title: Turito Yuenan CMS
+title: The Internerdt
 
 menu:
   main:
-    - name: Articles
+    - name: Contents
       pageRef: /articles
       params:
-        color: var(--ctp-macchiato-red)
+        symbol: feed
       weight: 1
     - name: Projects
-      url: https://turitoyuenan.pages.dev/projects
+      pageRef: /projects
       params:
-        color: var(--ctp-macchiato-peach)
+        symbol: storage
       weight: 2
-    - name: Connect
-      url: https://turitoyuenan.pages.dev/connect
+    - name: Contact
+      pageRef: /contact
       params:
-        color: var(--ctp-macchiato-green)
+        symbol: language
       weight: 3
-    - name: My CV
-      pageRef: /cvitae
+    - name: Portfolio
+      pageRef: /portfolio
       params:
-        color: var(--ctp-macchiato-blue)
+        symbol: profile
       weight: 4
