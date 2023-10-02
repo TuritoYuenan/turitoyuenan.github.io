@@ -1,0 +1,36 @@
+.home-heading {
+	margin-block: 2rem 1rem;
+	font-size: 2rem;
+	font-weight: normal;
+
+	/* We don't want the first heading to push too much space before nothing */
+	&:first-child {
+		margin-block-start: 0;
+	}
+
+	/* Add a bullet point before the heading */
+	&::before {
+		content: "";
+		width: 0.5em;
+		height: 0.5em;
+		margin-right: 1rem;
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	&:nth-of-type(4n+1)::before {
+		background-color: var(--haikei-red);
+	}
+
+	&:nth-of-type(4n+2)::before {
+		background-color: var(--haikei-orange);
+	}
+
+	&:nth-of-type(4n+3)::before {
+		background-color: var(--haikei-green);
+	}
+
+	&:nth-of-type(4n+4)::before {
+		background-color: var(--haikei-blue);
+	}
+}

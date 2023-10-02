@@ -1,0 +1,68 @@
+nav {
+	/* Shape */
+	width: 6rem;
+	height: 100vh;
+	padding: 1rem;
+
+	/* Color */
+	background: var(--haikei-yellow);
+
+	/* Fixed in place */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#wordmark:hover {
+	scale: 1.2;
+	background-color: inherit;
+	color: inherit;
+}
+
+#menu {
+	margin: 0;
+	padding: 0;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	& a {
+		width: 4rem;
+		height: 4rem;
+		padding: 0.5rem;
+		background: var(--haikei-black);
+		border-radius: 50%;
+	}
+
+	& img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	main {
+		margin-left: 0;
+	}
+
+	nav {
+		width: 100%;
+		height: auto;
+		position: static;
+	}
+
+	#wordmark {
+		display: none;
+	}
+
+	#menu {
+		flex-direction: row;
+	}
+}

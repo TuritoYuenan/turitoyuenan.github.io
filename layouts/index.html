@@ -1,36 +1,36 @@
 {{define "head"}}
-<style>
-	header {
-		max-width: 1000px;
-		margin: auto;
-		padding: 1rem;
-		text-align: center;
-	}
+{{ $heroStyle := resources.Get "styles/hero.css" }}
+{{ $homeheadingStyle := resources.Get "styles/home-heading.css" }}
 
-	header h1 {
-		margin-bottom: 1rem;
-	}
-
-	header a {
-		width: fit-content;
-		margin: auto;
-		padding: 1rem;
-		display: block;
-
-		/* styling */
-		background: var(--ctp-macchiato-red);
-		color: var(--ctp-macchiato-base);
-		border-radius: 1rem;
-	}
-</style>
+<link rel="stylesheet" href="{{ $heroStyle.Permalink }}">
+<link rel="stylesheet" href="{{ $homeheadingStyle.Permalink }}">
 {{end}}
 
 {{define "main"}}
-<header>
-	<h1>New website &DownArrow;</h1>
-	<a href="https://turitoyuenan.pages.dev">turitoyuenan.pages.dev</a>
+<header id="hero">
+	<div><img src="/favicon.svg" alt="" width="256" height="256"></div>
+	<div>
+		<h1 id="title">{{ .Site.Title }}</h1>
+		<p id="subtitle">{{ .Page.Description }}</p>
+	</div>
 </header>
 <article>
 	{{.Content}}
+	<div>
+		<h1 class="home-heading">My Contents</h1>
+		<p>Articles, Blog posts, Announcements</p>
+	</div>
+	<div>
+		<h1 class="home-heading">My Projects Showcase</h1>
+		<p>Showcase of my side hustles</p>
+	</div>
+	<div>
+		<h1 class="home-heading">Contact with me</h1>
+		<p>My available social accounts</p>
+	</div>
+	<div>
+		<h1 class="home-heading">My Portfolio</h1>
+		<p>Check out my progress, knowledge, experience</p>
+	</div>
 </article>
 {{end}}

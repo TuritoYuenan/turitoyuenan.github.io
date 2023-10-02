@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
+{{ $globalStyle := resources.Get "styles/global.css"}}
+{{ $navbarStyle := resources.Get "styles/navbar.css"}}
+{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify | fingerprint }}
+
 <head>
 	<meta charset="UTF-8">
-
-	<title>{{ replace .Name "-" " " | title }} | {{ .Site.Title}}</title>
 	<meta name="description" content="{{ .Page.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{{ $globalStyle := resources.Get "global.css"}}
-	{{ $navbarStyle := resources.Get "navbar.css"}}
-	{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	<title>{{ .Page.Title }} | {{ .Site.Title}}</title>
 
-	{{ $favicon := resources.Get "favicon.svg" | fingerprint }}
-	<link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/x-icon">
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	<link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
 
 	{{- block "head" . }}{{- end }}
 </head>
 
 <body>
 	<script>0</script>
-	<div style="display: contents;">
-		{{- partial "navbar.html" . -}}
-		<main>
-			{{- block "main" . }}{{- end }}
-		</main>
+	{{- partial "navbar.html" . -}}
+	<main>
+		{{- block "main" . }}{{- end }}
 		{{- partial "footer.html" . -}}
-	</div>
+	</main>
 </body>
 
 </html>
