@@ -1,10 +1,14 @@
 <nav>
-	<a href="https://turitoyuenan.pages.dev/" id="wordmark">
-		<img src="https://turitoyuenan.pages.dev/wordmark.svg" width="380" height="125" alt="Wordmark" />
+	<a href="/" id="wordmark">
+		<svg width="64" height="75" viewBox="0 0 96 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill="#001220" d="M8 32L0 64H41.6L29.6 112L69.44 64L96 32H49.6L57.6 0H16L8 32Z" />
+		</svg>
 	</a>
-	<div id="nav__menu">
+	<div id="menu">
 		{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}" style="color: {{ .Params.color }};">{{ .Name }}</a>
+		<a href="{{ .URL }}">
+			<img src="/symbols/{{ .Params.symbol }}.svg" alt="{{ .Name }}" width="64" height="64">
+		</a>
 		{{ end }}
 	</div>
 </nav>
