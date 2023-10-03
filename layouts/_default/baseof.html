@@ -3,7 +3,7 @@
 
 {{ $globalStyle := resources.Get "styles/global.css"}}
 {{ $navbarStyle := resources.Get "styles/navbar.css"}}
-{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify | fingerprint }}
+{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify }}
 
 <head>
 	<meta charset="UTF-8">
