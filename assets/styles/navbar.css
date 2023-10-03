@@ -1,11 +1,9 @@
+/* Navigation bar/rail */
 nav {
-	/* Shape */
+	/* Rail shape */
 	width: 6rem;
 	height: 100vh;
 	padding: 1rem;
-
-	/* Color */
-	background: var(--haikei-yellow);
 
 	/* Fixed in place */
 	position: fixed;
@@ -17,14 +15,17 @@ nav {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	/* Color */
+	background-color: var(--haikei-yellow);
+
+	/* Scale navbar links when hovered */
+	& a:hover {
+		scale: 1.2;
+	}
 }
 
-#wordmark:hover {
-	scale: 1.2;
-	background-color: inherit;
-	color: inherit;
-}
-
+/* Navigation bar menu */
 #menu {
 	margin: 0;
 	padding: 0;
@@ -32,18 +33,16 @@ nav {
 	display: flex;
 	flex-direction: column;
 
+	/* Menu items */
 	& a {
 		width: 4rem;
 		height: 4rem;
 		padding: 0.5rem;
-		background: var(--haikei-black);
+		background-color: var(--haikei-black);
 		border-radius: 50%;
-
-		&:hover {
-			scale: 1.2;
-		}
 	}
 
+	/* Menu icons */
 	& img {
 		display: block;
 		max-width: 100%;
@@ -51,21 +50,26 @@ nav {
 	}
 }
 
+/* Mobile mode */
 @media (max-width: 600px) {
+	/* Remove lent space for navbar */
 	main {
 		margin-left: 0;
 	}
 
+	/* Change to Bar shape */
 	nav {
 		width: 100%;
 		height: auto;
 		position: static;
 	}
 
+	/* Hide wordmark */
 	#wordmark {
 		display: none;
 	}
 
+	/* Horizontal menu */
 	#menu {
 		flex-direction: row;
 	}

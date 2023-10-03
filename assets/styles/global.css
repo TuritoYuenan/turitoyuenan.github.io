@@ -26,11 +26,13 @@
 	box-sizing: border-box;
 }
 
+/* Remove browser default body margin */
 body {
 	margin: 0;
 }
 
 main {
+	/* Lend space for navbar */
 	margin-left: 6rem;
 	padding: 1rem;
 }
@@ -43,6 +45,7 @@ footer {
 	padding: 1rem;
 }
 
+/* Remove browser default text margin */
 h1,
 h2,
 h3,
@@ -53,23 +56,26 @@ p {
 	margin-block: 0;
 }
 
+/* Top headings to use brand font */
 h1,
 h2,
 h3 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Link configuration */
 a {
 	color: var(--haikei-yellow);
 	text-decoration: none;
 	transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+/* Underline link when hovered */
 a:hover {
-	background-color: var(--haikei-yellow);
-	color: var(--haikei-black);
+	text-decoration: underline;
 }
 
+/* Selected elements */
 ::selection {
 	background-color: var(--haikei-yellow);
 	color: var(--haikei-black);
