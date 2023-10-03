@@ -1,33 +1,15 @@
 {{define "head"}}
-<meta name="description" content="{{.Page.Description}}">
-<style>
-	#frontmatter {
-		margin: auto;
-		padding: 1rem 2rem;
-		width: fit-content;
-		text-align: center;
-	}
-
-	#frontmatter h1 {
-		font-size: clamp(1em, 30vw, 2em);
-		text-wrap: balance;
-	}
-
-	@media (max-width: 600px) {
-		#frontmatter {
-			padding: .5rem;
-		}
-	}
-</style>
+{{ $pageStyle := resources.Get "styles/content-page.css" | minify }}
+<link rel="stylesheet" href="{{ $pageStyle.Permalink }}">
 {{end}}
 
 {{define "main"}}
+<header id="frontmatter">
+	<h1 id="title">{{.Title}}</h1>
+	<p id="desc">{{.Description}}</p>
+	<p id="date">Published {{.Date.Format "02 January 2006"}}</p>
+</header>
 <article>
-	<header id="frontmatter">
-		<h1>{{.Title}}</h1>
-		<p>{{.Description}}</p>
-		<p>Published {{.Date.Format "02 January, 2006"}}</p>
-	</header>
 	{{.Content}}
 </article>
 {{end}}

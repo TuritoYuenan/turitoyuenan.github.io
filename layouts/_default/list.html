@@ -1,31 +1,49 @@
 {{define "head"}}
 <style>
+	/* List page header */
 	header {
-		padding: 2rem;
-		background: var(--ctp-macchiato-crust);
-		color: var(--ctp-macchiato-red);
+		padding: 1rem;
+
+		& h1 {
+			font-size: 3rem;
+		}
+
+		& p {
+			font-size: 1.5rem;
+		}
 	}
 
-	section {
-		max-width: 120ch;
-		margin: auto;
+	/* List view */
+	#listview {
 		padding: 1rem;
-	}
 
-	section a {
-		padding: 1rem;
-		display: flex;
-		flex-wrap: wrap;
+		/* Grid layout */
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
 		gap: 1rem;
-		color: inherit;
 	}
 
-	.thumbnail img {
-		max-width: 16ch;
-		width: 100%;
-		height: auto;
-		display: block;
-		border-radius: 1rem;
+	/* List item */
+	#listview a {
+		/* Keep default color */
+		color: inherit;
+
+		/* Flexbox layout */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		/* Gap between thumbnail and info */
+		gap: 1rem;
+
+		/* Item thumbnail */
+		& img {
+			max-width: 20ch;
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 1rem;
+		}
 	}
 </style>
 {{end}}
@@ -35,18 +53,16 @@
 	<h1>{{replace .Name "-" " " | title}}</h1>
 	<p>{{.Page.Description}}</p>
 </header>
-<section id="section">
+<section id="listview">
 	{{range .Pages}}
-	<a href="{{.Permalink}}">
+	<a href="{{.Permalink}}" aria-label="Read: {{ .Page.Title }}">
 		<div class="thumbnail">
 			<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail for '{{.Page.Title}}'" width="1024" height="768" />
 		</div>
-		<div>
+		<div class="info">
 			<h2>{{.Title}}</h2>
-			<p>
-				<small>{{.Date.Format "02-Jan-2006"}}</small>
-				&bullet; {{.Description}}
-			</p>
+			<p>{{.Date.Format "02 Jan 2006"}}</p>
+			<p>{{.Description}}</p>
 		</div>
 	</a>
 	{{end}}
