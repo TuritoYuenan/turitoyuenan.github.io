@@ -1,6 +1,10 @@
-languageCode: en-us
+languageCode: en-VN
 baseURL: http://turitoyuenan.github.io
 title: The Internerdt
+copyright: 2023 Minh Triet
+
+enableEmoji: true
+enableRobotsTXT: true
 
 menu:
   main:
