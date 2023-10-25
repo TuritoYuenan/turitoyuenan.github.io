@@ -4,6 +4,10 @@
 {{ $homepageStyle := slice $hero $headings | resources.Concat "homepage.css" | minify }}
 
 <link rel="stylesheet" href="{{ $homepageStyle.Permalink }}">
+
+{{ $feed := resources.Get "styles/home-feed.css" | minify }}
+
+<link rel="stylesheet" href="{{ $feed.Permalink }}">
 {{end}}
 
 {{define "main"}}
@@ -16,5 +20,22 @@
 </header>
 <article>
 	{{.Content}}
+	<div class="home-heading" id="contents">
+		<h1>Contents</h1>
+		<p>Articles, Blog posts, Announcements</p>
+	</div>
+	{{partial "feed" .}}
+	<div class="home-heading" id="projects">
+		<h1>Projects showcase</h1>
+		<p>Showcase of my projects & products</p>
+	</div>
+	<div class="home-heading" id="contact">
+		<h1>Contact with me</h1>
+		<p>My available social accounts</p>
+	</div>
+	<div class="home-heading" id="portfolio">
+		<h1>My Portfolio</h1>
+		<p>Check out my progress, knowledge, experience</p>
+	</div>
 </article>
 {{end}}

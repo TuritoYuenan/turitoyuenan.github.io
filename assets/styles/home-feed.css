@@ -1,0 +1,40 @@
+/* Homepage content preview Feed */
+#homefeed {
+	padding-block: 1rem;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	gap: 1.5rem;
+
+	/* Feed item settings */
+	--fwidth: 300px;
+	--fsize: 10px;
+	--fcolor: var(--haikei-red);
+
+	/* Feed item */
+	.feeditem {
+		max-width: var(--fwidth);
+		margin-right: var(--fsize);
+		background: #FFF1;
+		border-radius: 1rem;
+		box-shadow: var(--fsize) var(--fsize) var(--fcolor);
+
+		/* item Thumbnail */
+		& img {
+			/* Responsive image size */
+			width: var(--fwidth);
+			height: auto;
+
+			/* As a rounded block */
+			display: block;
+			border-radius: 1rem;
+		}
+
+		/* item Info */
+		.info {
+			padding: 1rem;
+			color: inherit;
+			display: block;
+		}
+	}
+}
