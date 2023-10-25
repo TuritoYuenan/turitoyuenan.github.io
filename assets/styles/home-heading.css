@@ -5,23 +5,6 @@
 	&:first-of-type {
 		margin-block-start: 0;
 	}
-
-	/* Rainbow homepage headings */
-	&:nth-of-type(4n+1) h1::before {
-		background-color: var(--haikei-red);
-	}
-
-	&:nth-of-type(4n+2) h1::before {
-		background-color: var(--haikei-orange);
-	}
-
-	&:nth-of-type(4n+3) h1::before {
-		background-color: var(--haikei-green);
-	}
-
-	&:nth-of-type(4n+4) h1::before {
-		background-color: var(--haikei-blue);
-	}
 }
 
 /* Homepage heading title */
@@ -44,4 +27,21 @@
 /* Homepage heading description */
 .home-heading p {
 	font-size: 1.5rem;
+}
+
+/* Rainbow homepage headings */
+#contents h1::before {
+	background-color: var(--haikei-red);
+}
+
+#projects h1::before {
+	background-color: var(--haikei-orange);
+}
+
+#contact h1::before {
+	background-color: var(--haikei-green);
+}
+
+#portfolio h1::before {
+	background-color: var(--haikei-blue);
 }
