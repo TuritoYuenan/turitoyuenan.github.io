@@ -2,11 +2,9 @@
 title: Songs from the Years of Fire
 description: A short Soviet animation from 1971 about the Russian civil war
 date: 2022-08-16T17:47:32+07:00
-draft: true
+draft: false
 thumbnail: /thumbnails/years-of-fire.webp
 ---
-## Abstract
-
 [Песни огненных лет](https://ru.wikipedia.org/wiki/Песни_огненных_лет) (Songs from the Years of Fire) is a 1971 Soviet abstract animation film that retells the history of the Russian Civil War through the songs of that time period.
 
 The film, directed by [Inessa Kovalevskaya](https://wikipedia.org/wiki/Inessa_Kovalevskaya), consists of five songs in order:
