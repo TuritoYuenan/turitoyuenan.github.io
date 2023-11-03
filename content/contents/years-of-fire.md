@@ -1,6 +1,6 @@
 ---
-title: Songs from the Years of Fire
-description: A short Soviet animation from 1971 about the Russian civil war
+title: History - Songs from the Years of Fire
+description: Introducing a 1971 Soviet abstract animation about the Russian civil war
 date: 2022-08-16T17:47:32+07:00
 draft: false
 thumbnail: /thumbnails/years-of-fire.webp
