@@ -46,6 +46,13 @@ footer {
 	text-align: center;
 }
 
+blockquote {
+	margin: 1rem 0;
+	padding: 1rem;
+	background-color: #FFF1;
+	border-left: solid 5pt var(--haikei-yellow);
+}
+
 /* Remove browser default text margin */
 h1,
 h2,
