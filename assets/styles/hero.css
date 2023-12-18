@@ -13,18 +13,18 @@
 	}
 
 	#subtitle {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 
 @media (max-width: 900px) {
 	#hero {
 		#title {
-			font-size: 3.5rem;
+			font-size: 3rem;
 		}
 
 		#subtitle {
-			font-size: 1.4rem;
+			font-size: 1rem;
 		}
 	}
 }

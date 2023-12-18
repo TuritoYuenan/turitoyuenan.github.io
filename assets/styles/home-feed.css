@@ -9,7 +9,6 @@
 	/* Feed item settings */
 	--fwidth: 300px;
 	--fsize: 10px;
-	--fcolor: var(--haikei-red);
 
 	/* Feed item */
 	.feeditem {
@@ -17,7 +16,7 @@
 		margin-right: var(--fsize);
 		background: #FFF1;
 		border-radius: 1rem;
-		box-shadow: var(--fsize) var(--fsize) var(--fcolor);
+		box-shadow: var(--fsize) var(--fsize) var(--haikei-red);
 
 		/* item Thumbnail */
 		& img {

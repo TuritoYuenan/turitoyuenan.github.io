@@ -1,13 +1,9 @@
 {{define "head"}}
 {{ $hero := resources.Get "styles/hero.css" }}
-{{ $headings := resources.Get "styles/home-heading.css" }}
-{{ $homepageStyle := slice $hero $headings | resources.Concat "homepage.css" | minify }}
-
-<link rel="stylesheet" href="{{ $homepageStyle.Permalink }}">
-
 {{ $feed := resources.Get "styles/home-feed.css" | minify }}
 
-<link rel="stylesheet" href="{{ $feed.Permalink }}">
+<link rel="stylesheet" href="{{ $hero.RelPermalink }}">
+<link rel="stylesheet" href="{{ $feed.RelPermalink }}">
 {{end}}
 
 {{define "main"}}
@@ -20,22 +16,31 @@
 </header>
 <article>
 	{{.Content}}
-	<div class="home-heading" id="contents">
-		<h1>Contents</h1>
-		<p>Articles, Blog posts, Announcements</p>
-	</div>
-	{{partial "feed" .}}
-	<div class="home-heading" id="projects">
-		<h1>Projects showcase</h1>
-		<p>Showcase of my projects & products</p>
-	</div>
-	<div class="home-heading" id="contact">
-		<h1>Contact with me</h1>
-		<p>My available social profiles</p>
-	</div>
-	<div class="home-heading" id="portfolio">
-		<h1>My Portfolio</h1>
-		<p>About me, my progress, roles and experience</p>
-	</div>
+	<h1>Contents</h1>
+	<p>Articles, Blog posts, Announcements</p>
+	<section id="homefeed">
+		{{ range (where .Site.Pages "Section" "contents") }}
+		{{ range .Pages }}
+		<div class="feeditem">
+			<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail for '{{.Page.Title}}'" width="1024" height="768" />
+			<a class="info" href="{{ .RelPermalink }}">
+				<h2>{{ .Title }}</h2>
+				<p>{{.Description}}</p>
+			</a>
+		</div>
+		{{ end }}
+		{{ end }}
+		<div class="feeditem">
+			<a href="./contents" class="info">
+				<h2>More</h2>
+			</a>
+		</div>
+	</section>
+	<h1>Projects showcase</h1>
+	<p>Showcase of my projects & products</p>
+	<h1>Contact with me</h1>
+	<p>My available social profiles</p>
+	<h1>My Portfolio</h1>
+	<p>About me, my progress, roles and experience</p>
 </article>
 {{end}}
