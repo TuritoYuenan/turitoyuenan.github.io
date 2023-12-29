@@ -1,17 +1,16 @@
 /* Homepage content preview Feed */
-#homefeed {
+.homefeed.contents {
 	padding-block: 1rem;
 	display: flex;
 	flex-direction: row;
 	overflow-x: auto;
 	gap: 1.5rem;
 
-	/* Feed item settings */
-	--fwidth: 300px;
-	--fsize: 10px;
-
 	/* Feed item */
 	.feeditem {
+		--fwidth: 300px;
+		--fsize: 10px;
+
 		max-width: var(--fwidth);
 		margin-right: var(--fsize);
 		background: #FFF1;
@@ -26,7 +25,7 @@
 
 			/* As a rounded block */
 			display: block;
-			border-radius: 1rem;
+			border-radius: 1rem 1rem 0 0;
 		}
 
 		/* item Info */
@@ -36,4 +35,9 @@
 			display: block;
 		}
 	}
+}
+
+.homefeed.projects {
+	display: grid;
+	grid-template-areas: '';
 }

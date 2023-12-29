@@ -18,7 +18,7 @@
 	{{.Content}}
 	<h1>Contents</h1>
 	<p>Articles, Blog posts, Announcements</p>
-	<section id="homefeed">
+	<section class="homefeed contents">
 		{{ range (where .Site.Pages "Section" "contents") }}
 		{{ range .Pages }}
 		<div class="feeditem">
@@ -30,14 +30,22 @@
 		</div>
 		{{ end }}
 		{{ end }}
-		<div class="feeditem">
-			<a href="./contents" class="info">
-				<h2>More</h2>
-			</a>
-		</div>
 	</section>
 	<h1>Projects showcase</h1>
 	<p>Showcase of my projects & products</p>
+	<section class="homefeed projects">
+		{{ range (where .Site.Pages "Section" "projects") }}
+		{{ range .Pages }}
+		<div class="feeditem">
+			<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail for '{{.Page.Title}}'" width="1024" height="768" />
+			<a class="info" href="{{ .RelPermalink }}">
+				<h2>{{ .Title }}</h2>
+				<p>{{.Description}}</p>
+			</a>
+		</div>
+		{{ end }}
+		{{ end }}
+	</section>
 	<h1>Contact with me</h1>
 	<p>My available social profiles</p>
 	<h1>My Portfolio</h1>
