@@ -1,7 +1,7 @@
 languageCode: en-VN
 baseURL: http://turitoyuenan.github.io
 title: Turito Yuenan
-copyright: 2024 Nguyen Ta Minh Triet
+copyright: 2024 Minh-Triet Nguyen-Ta
 
 enableEmoji: true
 enableRobotsTXT: true
@@ -13,6 +13,10 @@ params:
   social:
     facebook_admin: TuritoYuenan
     twitter: TuritoYuenan
+
+taxonomies:
+  topic: topics
+  skill: skills
 
 menu:
   social:

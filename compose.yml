@@ -1,4 +1,4 @@
-name: turito-yuenan-website
+name: turitoyuenan
 
 services:
   hugo:
