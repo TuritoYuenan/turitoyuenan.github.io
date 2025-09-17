@@ -1,12 +1,17 @@
 {{ range . }}
-<div>
-	<img src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" width="1024" height="768" />
-	<a class="info" href="{{ .Page.RelPermalink }}">
-		<div>
-			<span class="chip">{{ .Page.Date.Format "2006-01-02" }}</span>
-		</div>
-		<h2>{{ .Page.Title }}</h2>
+<article class="no-padding small-width medium-height border">
+	<!-- <a href="{{ .Page.RelPermalink }}"> -->
+	<img class="responsive small" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
+	<div class="padding">
+		<nav class="wrap">
+			<span class="chip">
+				<i>today</i>
+				{{ .Page.Date.Format "2006-01-02" }}
+			</span>
+		</nav>
+		<h5 class="small">{{ .Page.Title }}</h5>
 		<p>{{ .Page.Description }}</p>
-	</a>
-</div>
+	</div>
+	<!-- </a> -->
+</article>
 {{ end }}

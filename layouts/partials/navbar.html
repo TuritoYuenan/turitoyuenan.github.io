@@ -1,14 +1,35 @@
-<nav>
-	<a href="/" id="wordmark" aria-label="Back to Homepage">
-		<svg xmlns="http://www.w3.org/2000/svg" width="64" height="75" viewBox="0 0 96 112">
-			<path fill="#001220" d="M8 32L0 64H41.6L29.6 112L69.44 64L96 32H49.6L57.6 0H16L8 32Z" />
-		</svg>
-	</a>
-	<div id="menu">
-		{{ range site.Menus.main }}
-		<a href="{{ .URL }}" title="{{ .Name }}" aria-label="Go to {{ .Name }} page">
-			<img src="/symbols/{{ .Params.symbol }}.svg" alt="{{ .Name }} icon" width="64" height="64">
+{{ $currentPage := . }}
+<nav class="s top">
+	<button><i>flash_on</i><span>Turito<br>Yuenan</span></button>
+	<nav class="group connected">
+		{{ range $i, $e := site.Menus.main }}
+		<a class='
+		button
+		{{ if eq $i 0 }}left-round{{ end }}
+		{{ if eq (add $i 1) (len site.Menus.main) }}right-round{{ end }}
+		{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}
+		' href="{{ .URL }}" title="{{ .Name }}" aria-label="Go to {{ .Name }} page">
+			<i>{{ .Params.symbol }}</i>
 		</a>
 		{{ end }}
-	</div>
+	</nav>
+</nav>
+
+<nav class="m l left max" id="navrail">
+	<header>
+		<button class="extra circle transparent" id="navrail_button" aria-label="Toggle navigation menu">
+			<i>menu_open</i>
+		</button>
+		<a class="button extend square round" href="/">
+			<i>flash_on</i>
+			<span>Turito<br>Yuenan</span>
+		</a>
+	</header>
+	{{ range site.Menus.main }}
+	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
+		aria-label="Go to {{ .Name }} page">
+		<i>{{ .Params.symbol }}</i>
+		<span>{{ .Name }}</span>
+	</a>
+	{{ end }}
 </nav>

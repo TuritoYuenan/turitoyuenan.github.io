@@ -53,18 +53,18 @@ menu:
       params:
         symbol: feed
       weight: 1
-    - name: Project Showcase
+    - name: Projects
       pageRef: /projects
       params:
         symbol: storage
       weight: 2
-    - name: Science Website
+    - name: Sci-Web
       url: https://turitoyuenan.github.io/science-website
       params:
         symbol: language
       weight: 3
-    - name: My Curriculum Vitae
-      url: https://turitoyuenan.github.io/TuritoYuenan
+    - name: My CV
+      url: https://turitoyuenan.github.io/TuritoYuenan/cvitae.html
       params:
-        symbol: profile
+        symbol: contacts_product
       weight: 4

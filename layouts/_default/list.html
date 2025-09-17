@@ -1,25 +1,48 @@
-{{define "head"}}
+{{ define "head" }}
 {{ $style := resources.Get "styles/page-list.css" | minify }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-{{end}}
+{{ end }}
 
-{{define "main"}}
+{{ define "main" }}
 <header>
-	<h1>{{replace .Name "-" " " | title}}</h1>
-	<p>{{.Page.Description}}</p>
+	<h1>{{ replace .Name "-" " " | title }}</h1>
+	<p>{{ .Page.Description }}</p>
 </header>
-<section id="listview">
-	{{range .Pages}}
-	<a href="{{.Permalink}}" aria-label="Read: {{ .Page.Title }}">
-		<div class="thumbnail">
-			<img src="{{.Page.Params.thumbnail}}" alt="Thumbnail for '{{.Page.Title}}'" width="1024" height="768" />
+<section class="grid">
+	{{ range .Pages }}
+	<article class="no-padding s12 m6 l">
+		<div class="grid no-space">
+			<div class="s6">
+				<img class="responsive" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
+			</div>
+			<div class="s6">
+				<div class="padding">
+					<nav class="wrap">
+						<span class="chip">{{ .Date.Format "02 January 2006" }}</span>
+					</nav>
+					<h5 class="small">{{ .Title }}</h5>
+					<p>{{ .Description }}</p>
+					<nav>
+						<a class="button round" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
+					</nav>
+				</div>
+			</div>
 		</div>
-		<div class="info">
-			<h2>{{.Title}}</h2>
-			<p>{{.Date.Format "02 January 2006"}}</p>
-			<p>{{.Description}}</p>
-		</div>
-	</a>
-	{{end}}
+	</article>
+	<article class="no-padding s12 m6 l3 s m">
+		<img class="responsive medium" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'"
+			width="1024" height="768" />
+		<a class="padding" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">
+			<div class="info">
+				<nav class="wrap">
+					<span class="chip">{{ .Date.Format "02 January 2006" }}</span>
+				</nav>
+				<h5 class="small">{{ .Title }}</h5>
+				<p>{{ .Description }}</p>
+				<nav><button>View</button></nav>
+			</div>
+		</a>
+	</article>
+	{{ end }}
 </section>
-{{end}}
+{{ end }}

@@ -5,36 +5,36 @@
 
 {{ define "main" }}
 {{ $favicon := relURL "favicon.svg" }}
-<header id="hero">
-	<div><img src="{{ $favicon }}" alt="" width="256" height="256"></div>
+<header class="middle-align center-align">
 	<div>
-		<h1 id="title">{{ site.Title }}</h1>
-		<p id="subtitle">{{ page.Description }}</p>
+		<img src="{{ $favicon }}" alt="" width="256" height="256">
+		<h1 class="">{{ site.Title }}</h1>
+		<p class="large">{{ page.Description }}</p>
 	</div>
 </header>
-<article>
-	{{ .Content }}
 
-	<h1><a href="./projects">Projects</a></h1>
-	<p>Showcase of my projects</p>
-	<section class="homefeed">
-		{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
-	</section>
+{{ .Content }}
 
-	<h1><a href="./contents">Contents</a></h1>
-	<p>Articles, Blog posts, Announcements</p>
-	<section class="homefeed">
-		{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
-	</section>
+<h3><a href="./projects">Projects</a></h3>
+<p>Showcase of my projects</p>
+<section class="row scroll">
+	{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
+</section>
 
-	<h1>Connect</h1>
-	<p>Find me on social platforms</p>
-	<section>
-		{{ range .Site.Menus.social }}
-		<span class="chip">
-			<a href="{{ .URL }}" target="_blank" rel="noreferrer noopener">{{ .Name }}</a>
-		</span>
-		{{ end}}
-	</section>
-</article>
+<h3><a href="./contents">Contents</a></h3>
+<p>Articles, Blog posts, Announcements</p>
+<section class="row scroll">
+	{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
+</section>
+
+<h3>Connect</h3>
+<p>Find me on social platforms</p>
+<nav class="wrap">
+	{{ range .Site.Menus.social }}
+	<span class="chip">
+		<a href="{{ .URL }}" target="_blank" rel="noreferrer noopener">{{ .Name }}</a>
+	</span>
+	{{ end }}
+</nav>
+
 {{ end }}

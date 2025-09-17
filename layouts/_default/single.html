@@ -4,16 +4,16 @@
 {{ end }}
 
 {{ define "main" }}
-<header id="frontmatter">
-	<h1 id="title">{{ .Title }}</h1>
-	<p id="desc">{{ .Description }}</p>
-	<p id="date">Published {{ .Date.Format "02 January 2006" }}</p>
+<header class="padding">
+	<h1 class="small">{{ .Title }}</h1>
+	<p class="small">Published {{ .Date.Format "02 January 2006" }}</p>
+	<p>{{ .Description }}</p>
 </header>
 
-<article>
-	<section id="thumbnail">
-		<img src="{{ .Params.thumbnail }}" alt="">
+<section>
+	<section class="padding">
+		<img class="responsive medium round" src="{{ .Params.thumbnail }}" alt="">
 	</section>
 	{{ .Content }}
-</article>
+</section>
 {{ end }}
