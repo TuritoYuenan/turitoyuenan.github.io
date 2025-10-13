@@ -3,27 +3,44 @@
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 
-{{ define "main" }}
+{{ define "header" }}
 <header>
-	<h1>{{ replace .Name "-" " " | title }}</h1>
-	<p>{{ .Page.Description }}</p>
+	<nav>
+		<button class="circle transparent" aria-label="Go back" onclick="history.back()">
+			<i>arrow_back</i>
+		</button>
+		<div class="max"></div>
+		<button class="circle transparent" aria-label="Share this page"
+			onclick="sharePage(document.title, window.location.href)">
+			<i>share</i>
+		</button>
+	</nav>
+	<div class="small-padding">
+		<h2>{{ replace .Name "-" " " | title }}</h2>
+		<p>{{ .Page.Description }}</p>
+	</div>
 </header>
-<section class="grid">
+{{ end }}
+
+{{ define "main" }}
+<section class="responsive grid padding">
 	{{ range .Pages }}
 	<article class="no-padding s12 m6 l">
 		<div class="grid no-space">
 			<div class="s6">
-				<img class="responsive" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
+				<div class="shape sided-cookie12 max rotate">
+					<img class="responsive" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
+				</div>
 			</div>
 			<div class="s6">
 				<div class="padding">
 					<nav class="wrap">
 						<span class="chip">{{ .Date.Format "02 January 2006" }}</span>
 					</nav>
-					<h5 class="small">{{ .Title }}</h5>
-					<p>{{ .Description }}</p>
+					<h5 class="small">{{ .Title | truncate 64 }}</h5>
+					<p>{{ .Description | truncate 128 }}</p>
 					<nav>
-						<a class="button round" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
+						<a class="button" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
 					</nav>
 				</div>
 			</div>
@@ -32,16 +49,16 @@
 	<article class="no-padding s12 m6 l3 s m">
 		<img class="responsive medium" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'"
 			width="1024" height="768" />
-		<a class="padding" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">
-			<div class="info">
-				<nav class="wrap">
-					<span class="chip">{{ .Date.Format "02 January 2006" }}</span>
-				</nav>
-				<h5 class="small">{{ .Title }}</h5>
-				<p>{{ .Description }}</p>
-				<nav><button>View</button></nav>
-			</div>
-		</a>
+		<div class="padding">
+			<nav class="wrap">
+				<span class="chip">{{ .Date.Format "02 January 2006" }}</span>
+			</nav>
+			<h5 class="small">{{ .Title }}</h5>
+			<p>{{ .Description }}</p>
+			<nav>
+				<a class="button" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
+			</nav>
+		</div>
 	</article>
 	{{ end }}
 </section>

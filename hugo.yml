@@ -48,6 +48,11 @@ menu:
       url: https://turitoyuenan.tumblr.com
       weight: 9
   main:
+    - name: Home
+      pageRef: /
+      params:
+        symbol: home
+      weight: -1
     - name: Contents
       pageRef: /contents
       params:

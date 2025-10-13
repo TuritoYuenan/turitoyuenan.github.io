@@ -3,24 +3,49 @@
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 
-{{ define "main" }}
-<header id="frontmatter">
-	<h1 id="title">{{ .Title }}</h1>
-	<p id="desc">{{ .Description }}</p>
-	<p id="date">Started on {{ .Date.Format "02 January 2006" }}</p>
+{{ define "header" }}
+<header class="">
 </header>
+<header>
+	<nav>
+		<button class="circle transparent" onclick="history.back()" aria-label="Go back">
+			<i>arrow_back</i>
+		</button>
+		<div class="max"></div>
+		<button class="circle transparent">
+			<i>attach_file</i>
+		</button>
+		<button class="circle transparent">
+			<i>today</i>
+		</button>
+		<button class="circle transparent">
+			<i>more_vert</i>
+		</button>
+	</nav>
+	<div class="small-padding">
+		<h2>{{ .Title }}</h2>
+		<p>{{ .Description }}</p>
+		<p>Started on {{ .Date.Format "02 January 2006" }}</p>
+	</div>
+</header>
+{{ end }}
 
-<article>
-	<section id="thumbnail">
-		<img src="{{ .Params.thumbnail }}" alt="">
+{{ define "main" }}
+<div>
+	<section class="padding round">
+		<img class="responsive" src="{{ .Params.thumbnail }}" alt="">
 	</section>
 
-	<h2>Keywords</h2>
-	{{ range .Params.keywords }}<span class="chip">{{ . }}</span>{{ end }}
+	<h3 class="small">Keywords</h3>
+	<nav class="wrapper">
+		{{ range .Params.keywords }}<span class="chip">{{ . }}</span>{{ end }}
+	</nav>
 
-	<h2>Skills</h2>
-	{{ range .Params.skills }}<span class="chip">{{ . }}</span>{{ end }}
+	<h3 class="small">Skills</h3>
+	<nav class="wrapper">
+		{{ range .Params.skills }}<span class="chip">{{ . }}</span>{{ end }}
+	</nav>
 
 	{{ .Content }}
-</article>
+</div>
 {{ end }}

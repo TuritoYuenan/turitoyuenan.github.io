@@ -1,30 +1,20 @@
 {{ $currentPage := . }}
-<nav class="s top">
-	<button><i>flash_on</i><span>Turito<br>Yuenan</span></button>
-	<nav class="group connected">
-		{{ range $i, $e := site.Menus.main }}
-		<a class='
-		button
-		{{ if eq $i 0 }}left-round{{ end }}
-		{{ if eq (add $i 1) (len site.Menus.main) }}right-round{{ end }}
-		{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}
-		' href="{{ .URL }}" title="{{ .Name }}" aria-label="Go to {{ .Name }} page">
-			<i>{{ .Params.symbol }}</i>
-		</a>
-		{{ end }}
-	</nav>
+<nav class="s bottom">
+	{{ range $i, $e := site.Menus.main }}
+	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
+		aria-label="Go to {{ .Name }} page">
+		<i>{{ .Params.symbol }}</i>
+		<span>{{ .Name }}</span>
+	</a>
+	{{ end }}
 </nav>
 
-<nav class="m l left max" id="navrail">
-	<header>
-		<button class="extra circle transparent" id="navrail_button" aria-label="Toggle navigation menu">
-			<i>menu_open</i>
-		</button>
-		<a class="button extend square round" href="/">
-			<i>flash_on</i>
-			<span>Turito<br>Yuenan</span>
-		</a>
-	</header>
+<nav class="m l left max center-align" id="navrail">
+	<!-- <header>
+		{{ $favicon := relURL "favicon.svg" }}
+		<img src="{{ $favicon }}" alt="" width="96" height="96">
+		<h2 class="small">Turito<br>Yuenan</h2>
+	</header> -->
 	{{ range site.Menus.main }}
 	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
 		aria-label="Go to {{ .Name }} page">

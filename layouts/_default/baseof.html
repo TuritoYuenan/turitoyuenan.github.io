@@ -32,19 +32,33 @@
 <body>
 	<script>0</script>
 	{{ partial "navbar.html" . }}
+	{{ block "header" . }}{{ end }}
 	<main>
 		{{ block "main" . }}{{ end }}
 	</main>
 	{{ partial "footer.html" . }}
-	<script>
-		document.getElementById('navrail_button').onclick = function () {
-			const navrail = document.getElementById('navrail');
-			if (navrail.classList.contains('max')) {
-				navrail.classList.remove('max');
+	<script async>
+		async function setTheme(subject) {
+			let theme = await ui("theme", subject);
+			return theme;
+		}
+
+		function sharePage(title, url) {
+			if (navigator.share) {
+				navigator.share({
+					text: 'From Turito Yuenan\'s website:',
+					title: title,
+					url: url
+				}).then(() => {
+					console.log('Thanks for sharing!');
+				})
+					.catch(console.error);
 			} else {
-				navrail.classList.add('max');
+				alert('Share not supported on this browser, copy the link instead.');
 			}
-		};
+		}
+
+		setTimeout(() => setTheme("#FFCC00"), 50);
 	</script>
 	<!-- <script src="{{ $linkScript.Permalink }}" integrity="{{ $linkScript.Data.Integrity }}"></script> -->
 </body>

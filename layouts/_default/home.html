@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 
-{{ define "main" }}
+{{ define "header" }}
 {{ $favicon := relURL "favicon.svg" }}
 <header class="middle-align center-align">
 	<div>
@@ -12,7 +12,9 @@
 		<p class="large">{{ page.Description }}</p>
 	</div>
 </header>
+{{ end }}
 
+{{ define "main" }}
 {{ .Content }}
 
 <h3><a href="./projects">Projects</a></h3>
