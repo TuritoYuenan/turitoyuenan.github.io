@@ -1,6 +1,5 @@
 {{ range . }}
 <article class="no-padding small-width medium-height border">
-	<!-- <a href="{{ .Page.RelPermalink }}"> -->
 	<img class="responsive small" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
 	<div class="padding">
 		<nav class="wrap">
@@ -11,7 +10,9 @@
 		</nav>
 		<h5 class="small">{{ .Page.Title }}</h5>
 		<p>{{ .Page.Description }}</p>
+		<nav aria-label="Button Bar">
+			<a class="button" href="{{ .Page.RelPermalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
+		</nav>
 	</div>
-	<!-- </a> -->
 </article>
 {{ end }}

@@ -33,7 +33,6 @@
 </head>
 
 <body>
-	<script>0</script>
 	{{ partial "navbar.html" . }}
 	{{ block "header" . }}{{ end }}
 	<main>
@@ -44,7 +43,7 @@
 		// Configure every button with id="back" to navigate back to the previous page
 		for (const button of document.querySelectorAll('#back')) {
 			button.addEventListener('click', () => {
-				window.history.back();
+				globalThis.history.back();
 			});
 		}
 
