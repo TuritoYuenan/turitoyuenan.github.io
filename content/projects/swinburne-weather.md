@@ -3,7 +3,7 @@ title: Swinburne Weather Service
 description: An IoT Weather Station System integrated with Edge Computing
 thumbnail: https://placehold.co/160x90
 date: 2023-12-09T14:21:11+07:00
-draft: true
+draft: false
 
 end_date: 2024-10-31T14:21:11+07:00
 deployment: https://turitoyuenan.github.io/zimmer-wetter

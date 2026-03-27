@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
 
-{{ $globalStyle := resources.Get "styles/global.css" | minify }}
-{{ $linkScript := resources.Get "scripts/links.js" | js.Build "links.js" | minify | resources.Fingerprint "sha512" }}
 {{ $favicon := relURL "favicon.svg" }}
 
 <head>
@@ -20,11 +18,16 @@
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
 	{{ end }}
 	<link rel="shortcut icon" href="{{ $favicon }}" type="image/svg+xml">
-	<link rel="stylesheet" href="{{ $globalStyle.Permalink }}">
 	<link href="https://cdn.jsdelivr.net/npm/beercss@3.12.6/dist/cdn/beer.min.css" rel="stylesheet" />
 	<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.6/dist/cdn/beer.min.js"></script>
 	<script type="module"
 		src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+
+	<style>
+		iframe {
+			border: none;
+		}
+	</style>
 
 	{{ block "head" . }}{{ end }}
 </head>
@@ -38,6 +41,13 @@
 	</main>
 	{{ partial "footer.html" . }}
 	<script async>
+		// Configure every button with id="back" to navigate back to the previous page
+		for (const button of document.querySelectorAll('#back')) {
+			button.addEventListener('click', () => {
+				window.history.back();
+			});
+		}
+
 		async function setTheme(subject) {
 			let theme = await ui("theme", subject);
 			return theme;
@@ -60,7 +70,6 @@
 
 		setTimeout(() => setTheme("#FFCC00"), 50);
 	</script>
-	<!-- <script src="{{ $linkScript.Permalink }}" integrity="{{ $linkScript.Data.Integrity }}"></script> -->
 </body>
 
 </html>

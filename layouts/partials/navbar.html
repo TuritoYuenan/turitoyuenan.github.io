@@ -1,5 +1,5 @@
 {{ $currentPage := . }}
-<nav class="s bottom">
+<nav aria-label="Bottom Navigation Bar" class="s bottom">
 	{{ range $i, $e := site.Menus.main }}
 	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
 		aria-label="Go to {{ .Name }} page">
@@ -9,12 +9,7 @@
 	{{ end }}
 </nav>
 
-<nav class="m l left max center-align" id="navrail">
-	<!-- <header>
-		{{ $favicon := relURL "favicon.svg" }}
-		<img src="{{ $favicon }}" alt="" width="96" height="96">
-		<h2 class="small">Turito<br>Yuenan</h2>
-	</header> -->
+<nav aria-label="Side Navigation Bar" class="m l left max center-align" id="navrail">
 	{{ range site.Menus.main }}
 	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
 		aria-label="Go to {{ .Name }} page">
