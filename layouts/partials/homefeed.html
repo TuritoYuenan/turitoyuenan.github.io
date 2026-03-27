@@ -2,7 +2,7 @@
 <article class="no-padding small-width medium-height border">
 	<img class="responsive small" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
 	<div class="padding">
-		<nav class="wrap">
+		<nav aria-label="Chip Bar" class="wrap">
 			<span class="chip">
 				<i>today</i>
 				{{ .Page.Date.Format "2006-01-02" }}
