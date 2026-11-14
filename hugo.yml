@@ -1,7 +1,11 @@
 locale: en-VN
 baseURL: http://turitoyuenan.github.io
-title: Turito Yuenan
+title: Treaty of Yuenan
 copyright: 2024 Minh-Triet Nguyen-Ta
+
+caches:
+  images:
+    dir: :cacheDir/images
 
 enableEmoji: true
 enableRobotsTXT: true
@@ -9,10 +13,10 @@ enableRobotsTXT: true
 params:
   author:
     email: turitoyuenan@proton.me
-    name: Turito Yuenan
+    name: Minh-Triet Nguyen-Ta
   social:
     facebook_admin: TuritoYuenan
-    twitter: TuritoYuenan
+    twitter: treaty_yuenan
 
 taxonomies:
   topic: topics
@@ -22,31 +26,28 @@ menu:
   social:
     - name: GitHub
       url: https://github.com/TuritoYuenan
-      weight: 1
+      weight: 100
+    - name: GitLab
+      url: https://gitlab.com/treaty
+      weight: 150
     - name: LinkedIn
-      url: https://linkedin.com/in/trietntm-cs
-      weight: 2
+      url: https://linkedin.com/in/treaty
+      weight: 200
     - name: LeetCode
       url: https://leetcode.com/TuritoYuenan
-      weight: 3
-    - name: Replit
-      url: https://replit.com/@TuritoYuenan
-      weight: 4
+      weight: 300
     - name: Facebook
-      url: https://facebook.com/TuritoYuenan
-      weight: 5
+      url: https://facebook.com/treatyyuenan
+      weight: 500
     - name: Pinterest
-      url: https://pinterest.com/TuritoYuenan
-      weight: 6
+      url: https://pinterest.com/treaty_yuenan
+      weight: 600
     - name: Reddit
       url: https://reddit.com/u/LeaderTurito
-      weight: 7
+      weight: 700
     - name: Twitter
-      url: https://twitter.com/TuritoYuenan
-      weight: 8
-    - name: Tumblr
-      url: https://turitoyuenan.tumblr.com
-      weight: 9
+      url: https://twitter.com/treaty_yuenan
+      weight: 800
   main:
     - name: Home
       pageRef: /
