@@ -1,18 +1,22 @@
 {{ range . }}
-<article class="no-padding small-width medium-height border">
-	<img class="responsive small" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
-	<div class="padding">
-		<nav aria-label="Chip Bar" class="wrap">
-			<span class="chip">
-				<i>today</i>
-				{{ .Page.Date.Format "2006-01-02" }}
-			</span>
-		</nav>
-		<h5 class="small">{{ .Page.Title }}</h5>
-		<p>{{ .Page.Description }}</p>
-		<nav aria-label="Button Bar">
-			<a class="button" href="{{ .Page.RelPermalink }}" aria-label="Read: {{ .Page.Title }}">View</a>
-		</nav>
-	</div>
-</article>
+<a href="{{ .Page.RelPermalink }}" class="s12 m4 l3 block">
+	<article class="no-padding medium-height border content-card">
+		<img class="responsive small" src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" />
+		<div class="padding">
+			<h5 class="small">{{ .Page.Title }}</h5>
+
+			<p>
+				<i class="prefix-icon">today</i>
+				<span>{{ .Page.Date.Format "2006-01-02" }}</span>
+			</p>
+
+			<p>
+				<i class="prefix-icon">description</i>
+				<span>
+					{{ with .Page.Description }}{{ . }}{{ else }}<em>No description given</em>{{ end }}
+				</span>
+			</p>
+		</div>
+	</article>
+</a>
 {{ end }}

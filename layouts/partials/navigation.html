@@ -9,7 +9,12 @@
 	{{ end }}
 </nav>
 
-<nav aria-label="Side Navigation Bar" class="m l left max center-align" id="navrail">
+<nav aria-label="Top Navigation Bar" class="m l top" id="navrail">
+	<a href="/"><img class="responsive" src="/favicon.svg" alt="Wordmark"></a>
+	<h6 class="small">{{ .Site.Title }}</h6>
+
+	<div class="max"></div>
+
 	{{ range site.Menus.main }}
 	<a class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}" title="{{ .Name }}"
 		aria-label="Go to {{ .Name }} page">

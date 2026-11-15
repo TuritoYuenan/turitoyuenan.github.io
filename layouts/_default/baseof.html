@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Locale }}">
 
-{{ $favicon := relURL "favicon.svg" }}
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="{{ page.Description }}">
@@ -17,28 +15,77 @@
 	{{ range .AlternativeOutputFormats }}
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
 	{{ end }}
+
+	{{ $favicon := relURL "favicon.svg" }}
 	<link rel="shortcut icon" href="{{ $favicon }}" type="image/svg+xml">
-	<link href="https://cdn.jsdelivr.net/npm/beercss@3.12.6/dist/cdn/beer.min.css" rel="stylesheet" />
-	<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.6/dist/cdn/beer.min.js"></script>
-	<script type="module"
-		src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+
+	<link rel="stylesheet" crossorigin="anonymous"
+		integrity="sha384-EqZ6IXmk+4jeYN6dm7SEK3B8T8AMiHLEujTTup/LU1rSEjt1Ce8Vz8uI6NQ8czHg"
+		href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css">
+
+	<script type="module" crossorigin="anonymous"
+		integrity="sha384-7xZPd8qp8XUHrLKlKeZKr5yHcqeQ0Juz7GLT0AOsAIMhtHNqKJg5bfFCj782KnFh"
+		src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
+
+	<script type="module" crossorigin="anonymous"
+		integrity="sha384-JtrVMEPzvwNPLzvea9qzdVrF7GCX5QmAA4TrSZqK6Ojv4C9VnCKhEgZRe35OCzqR"
+		src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&display=swap">
 
 	<style>
 		iframe {
 			border: none;
+		}
+
+		.google-sans {
+			--font: 'Google Sans Plex', 'Segoe UI', sans-serif;
+			font-weight: 400;
+		}
+
+		.prefix-icon {
+			margin-inline-end: 0.2rem;
+		}
+
+		.suffix-icon {
+			margin-inline-start: 0.2rem;
+		}
+
+		.content-card {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#home-hero {
+			background: url(/hero-banner.jpg) center 55%;
+			background-size: cover;
+		}
+
+		#home-hero header {
+			min-height: 30rem;
+			background-color: #0008;
 		}
 	</style>
 
 	{{ block "head" . }}{{ end }}
 </head>
 
-<body>
-	{{ partial "navbar.html" . }}
+<body class="google-sans">
+	{{ partial "navigation.html" . }}
+
 	{{ block "header" . }}{{ end }}
-	<main>
+
+	<main class="responsive padding">
 		{{ block "main" . }}{{ end }}
 	</main>
+
 	{{ partial "footer.html" . }}
+
 	<script async>
 		// Configure every button with id="back" to navigate back to the previous page
 		for (const button of document.querySelectorAll('#back')) {
@@ -55,7 +102,7 @@
 		function sharePage(title, url) {
 			if (navigator.share) {
 				navigator.share({
-					text: 'From Turito Yuenan\'s website:',
+					text: 'From Treaty of Yuenan:',
 					title: title,
 					url: url
 				}).then(() => {

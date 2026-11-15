@@ -1,31 +1,52 @@
 {{ define "header" }}
-{{ $favicon := relURL "favicon.svg" }}
-<header class="middle-align center-align">
-	<div>
-		<img src="{{ $favicon }}" alt="" width="256" height="256">
-		<h1 class="">{{ site.Title }}</h1>
-		<p class="large">{{ page.Description }}</p>
-	</div>
-</header>
 {{ end }}
 
 {{ define "main" }}
+<article class="no-padding border round" id="home-hero">
+	<header class="large-padding round">
+		<div class="large-space"></div>
+
+		<h1 class="">{{ site.Title }}</h1>
+		<p class="large-text">{{ page.Description }}</p>
+
+		<div class="large-space"></div>
+	</header>
+</article>
+
 {{ .Content }}
 
-<h3><a href="./projects">Projects</a></h3>
-<p>Showcase of my projects</p>
-<section class="row scroll">
-	{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
+<h3><a href="./projects">My latest projects</a></h3>
+
+<section class="grid">
+	{{ partial "homefeed.html" (first 4 (sort (where site.RegularPages "Section" "projects") "Date" "desc")) }}
 </section>
 
-<h3><a href="./contents">Contents</a></h3>
-<p>Articles, Blog posts, Announcements</p>
-<section class="row scroll">
-	{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
+<div class="row right-align">
+	<a class="link underline" href="/projects">
+		<span>View more projects</span>
+		<i class="suffix-icon">arrow_forward</i>
+	</a>
+</div>
+
+<div class="space"></div>
+
+<h3><a href="./contents">My latest write-ups</a></h3>
+
+<section class="grid">
+	{{ partial "homefeed.html" (first 4 (sort (where site.RegularPages "Section" "contents") "Date" "desc")) }}
 </section>
 
-<h3>Connect</h3>
-<p>Find me on social platforms</p>
+<div class="row right-align">
+	<a class="link underline" href="/contents">
+		<span>View more write-ups</span>
+		<i class="suffix-icon">arrow_forward</i>
+	</a>
+</div>
+
+<div class="space"></div>
+
+<h3>Connect with me on social media</h3>
+
 <nav class="wrap">
 	{{ range .Site.Menus.social }}
 	<span class="chip">

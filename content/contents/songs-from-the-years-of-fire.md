@@ -15,7 +15,7 @@ thumbnail: /thumbnails/years-of-fire.webp
 
 ## Youtube playlist
 
-{{< embed "https://www.youtube-nocookie.com/embed/videoseries?list=PLN0RqFX2ugKXG5Ug6au2Nc88PeycTRqqW" >}}
+{{< youtube JS4gHhnOUO8 >}}
 
 ## Spotify playlist
 
