@@ -1,7 +1,7 @@
 ---
 title: Containerised POS
-description: A Point-of-Sale system for the Food & Beverage industry (Swinburne COS20031)
-thumbnail: https://placehold.co/160x90
+description: A Point-of-Sale system for the Food & Beverage industry
+thumbnail: /projects/containerised-pos.webp
 date: 2024-09-06T07:15:00+07:00
 draft: false
 
