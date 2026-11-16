@@ -64,13 +64,3 @@ menu:
       params:
         symbol: storage
       weight: 2
-    - name: Sci-Web
-      url: https://turitoyuenan.github.io/science-website
-      params:
-        symbol: language
-      weight: 3
-    - name: My CV
-      url: https://turitoyuenan.github.io/TuritoYuenan/cvitae.html
-      params:
-        symbol: contacts_product
-      weight: 4
