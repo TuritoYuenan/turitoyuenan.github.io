@@ -21,11 +21,12 @@
 
 {{ define "main" }}
 <div class="grid">
-	<section class="s12 m8 right-padding round">
-		<img class="responsive" src="{{ .Params.thumbnail }}" alt="">
+	<section class="s12 m8 right-padding round" id="page--thumbnail">
+		<img class="responsive" src="{{ .Params.thumbnail }}" alt="Thumbnail for {{ .Title }}">
 	</section>
 
 	<section class="s12 m4">
+		<h3 class="small"><i class="prefix-icon">description</i> Description</h3>
 		{{ if .Description }}<p>{{ .Description }}</p>{{ end }}
 
 		<h3 class="small"><i class="prefix-icon">event</i> Start Date</h3>
@@ -33,13 +34,13 @@
 
 		{{ with .Params.deployment }}
 		<h3 class="small"><i class="prefix-icon">open_in_new</i> Deployment</h3>
-		<p><a href="{{ . }}">{{ . }}</a></p>
+		<p><a href="{{ . }}" target="_blank" rel="noreferrer noopener">{{ . }}</a></p>
 		{{ end }}
 
 		{{ with .Params.repository }}
 		<h3 class="small"><i class="prefix-icon">code</i> Repository</h3>
 		<nav aria-label="Repository links">
-			{{ range . }}<a href="{{ . }}">{{ . }}</a>{{ end }}
+			{{ range . }}<a href="{{ . }}" target="_blank" rel="noreferrer noopener">{{ . }}</a>{{ end }}
 		</nav>
 		{{ end }}
 	</section>

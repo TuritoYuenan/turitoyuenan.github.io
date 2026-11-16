@@ -13,7 +13,11 @@
 			<p>
 				<i class="prefix-icon">description</i>
 				<span>
-					{{ with .Page.Description }}{{ . }}{{ else }}<em>No description given</em>{{ end }}
+					{{ with .Page.Description }}
+						{{ . | strings.Truncate 80 "..." }}
+					{{ else }}
+						<em>No description given</em>
+					{{ end }}
 				</span>
 			</p>
 		</div>

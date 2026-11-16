@@ -15,14 +15,14 @@
 
 	<div class="small-padding">
 		<h1 class="small">{{ .Title }}</h1>
-		<p>Published on {{ .Date.Format "02 January 2006" }}</p>
+		<p>Published on {{ .Date.Format "02 January 2006" }} &bull; {{ .WordCount }} words</p>
 		<p>{{ .Description }}</p>
 	</div>
 </header>
 {{ end }}
 
 {{ define "main" }}
-<section>
+<section id="page--thumbnail">
 	<img class="responsive round" src="{{ .Params.thumbnail }}" alt="">
 </section>
 

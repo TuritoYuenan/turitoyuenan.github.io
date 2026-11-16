@@ -25,19 +25,15 @@
 	{{ range .Pages }}
 	<!-- Large screen version -->
 	<a class="s12 m6 block l" href="{{ .Permalink }}" aria-label="Read: {{ .Page.Title }}">
-		<article class="s12 m6 content-card border no-padding">
-			<div class="grid no-space">
-				<div class="s6">
-					<div class="max">
-						<img class="responsive" src="{{ .Page.Params.thumbnail }}"
-							alt="Thumbnail for '{{ .Page.Title }}'" />
-					</div>
+		<article class="content-card border no-padding" style="height: 100%;">
+			<div class="grid no-space" style="height: 100%;">
+				<div class="s6" id="list--card--thumbnail">
+					<img class="responsive" src="{{ .Page.Params.thumbnail }}"
+						alt="Thumbnail for '{{ .Page.Title }}'" />
 				</div>
 
 				<div class="s6">
 					<div class="padding">
-						<nav aria-label="Chip Bar" class="wrap">
-						</nav>
 						<h5 class="small">{{ .Title | truncate 64 }}</h5>
 
 						<p>
